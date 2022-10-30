@@ -1,5 +1,57 @@
 // header
 header#headerSticky.header
-  .wrapper 
-    | header
+  .header__top 
+    .wrapper 
+      .header__address 
+        svg(class="icon-map-pin")
+          use(xlink:href="img/sprite.svg#map-pin")
+        | Екатеринбург, ул. Норильская, 78 
+        a(href="#") Как нас найти?
+      ul.header__items 
+        li.header__price 
+          a(href="#") 
+            svg(class="icon-findprice")
+              use(xlink:href="img/sprite.svg#findprice")
+            | Узнать цену
+        li.header__tel 
+          a(href="tel:+73433430594") 
+            svg(class="icon-phone")
+              use(xlink:href="img/sprite.svg#phone")
+            | +7 (343) 343-05-94
+        li.header__whatsapp 
+          a(href="#") 
+            svg(class="icon-whatsapp")
+              use(xlink:href="img/sprite.svg#whatsapp")
+            | Whatsapp
+        li.header__callback 
+          a(href="#") 
+            svg(class="icon-ordercall")
+              use(xlink:href="img/sprite.svg#ordercall")
+            | Заказать звонок
+      .header__social 
+  .header__bottom 
+    .wrapper 
+      .header__logo 
+        a(href="#").header__logo-link 
+          img(src="img/3blogo-light.svg", alt="")
+        .header__logo-text Правильные русские бани
+      nav.header__nav 
+        ul.header__list 
+          li 
+            a(href="#") Парения
+          li 
+            a(href="#") Бани
+          li 
+            a(href="#") Акции
+          li 
+            a(href="#") Услуги
+          li 
+            a(href="#") Кухня
+          li 
+            a(href="#") Cертификаты
+          li 
+            a(href="#") События
+          li 
+            a(href="#") Контакты
+
 //	/header

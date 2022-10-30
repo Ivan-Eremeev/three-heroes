@@ -11,12 +11,12 @@ const html = false; // Нужно ли делать перезагрузку б�
 const server = false; // Если используется OpenServer и php
 
 // * Пути к папкам относительно корня проекта *
-const scssPath = '/scss', // Scss
-  cssPath = '/css', // Css
-  pugPath = '/pug', // Pug
+const scssPath = 'scss', // Scss
+  cssPath = 'css', // Css
+  pugPath = 'pug', // Pug
   htmlPath = './', // Html
-  jsPath = '/js', // Js
-  imgPath = '/img'; // Изображения
+  jsPath = 'js', // Js
+  imgPath = 'img'; // Изображения
 
 // Код
 const gulp = require('gulp'),
@@ -167,7 +167,7 @@ gulp.task('watch', function () {
     done();
   });
   gulp.watch(scssPath + '/**/*.scss', gulp.parallel('style'));
-  gulp.watch('./img/svg_icons/*.svg', gulp.parallel('svgsprite'));
+  gulp.watch(imgPath + '/svg_icons/*.svg', gulp.parallel('svgsprite'));
 });
 
 gulp.task('webp', () =>

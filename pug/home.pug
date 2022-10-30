@@ -1,0 +1,24 @@
+extends core/base.pug
+
+block title 
+  title Главная
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    main.content 
+
+      // welcome
+      .welcome
+        .welcome__video 
+          img(src="img/welcome-bg.webp", alt="")
+        .wrapper 
+          .welcome__buttons 
+            .btn.btn--white Узнать цену
+            .btn.btn--white Забронировать отдых
+      // /welcome
+
+    include core/footer.pug

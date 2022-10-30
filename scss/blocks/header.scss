@@ -1,6 +1,148 @@
 /* header */
 .header { 
-  
+  width: 100%;
+  color: #fff;
+  z-index: 11;
+  transition: .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  a {
+    color: #fff;
+  }
+  &__top {
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    transition: .3s;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      max-width: 1500px;
+    }
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-size: 14px;
+    fill: #fff;
+    svg {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+    a {
+      margin-left: 10px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 30px;
+      a {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        font-size: 16px;
+        fill: #fff;
+        svg {
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+        }
+        @media (min-width: $break_sm + 1) {
+          position: relative;
+          &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%,0);
+            transition: .3s;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__price {
+    
+  }
+  &__tel {
+    
+  }
+  &__whatsapp {
+    
+  }
+  &__callback {
+    
+  }
+  &__social {
+    
+  }
+  &__bottom {
+    padding: 28px 0;
+    .wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  &__logo-link {
+    max-width: 200px;
+    margin-right: 16px;
+  }
+  &__logo-text {
+    font-size: 14px;
+  }
+  &__nav {
+    
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-right: -14px;
+    font-size: 18px;
+    li {
+      margin: 0 14px;
+      a {
+        @media (min-width: $break_sm + 1) {
+          position: relative;
+          &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%,0);
+            transition: .3s;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // stiky menu
@@ -11,6 +153,13 @@
     left: 0;
     width: 100%;
     animation: showStyky 0.5s;
+    background-color: rgba(0,0,0,0.35);
+    .header__top {
+      margin-top: -50px;
+    }
+    .header__bottom {
+      padding: 15px 0;
+    }
   }
 }
 @keyframes showStyky {

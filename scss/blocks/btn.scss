@@ -1,0 +1,27 @@
+/* btn */
+.btn { 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 15px 14px;
+  background: transparent;
+  border-width: 3px;
+  border-style: solid;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: .3s;
+  &--white {
+    background-color: rgba(50, 45, 41, 0.6);
+    border-color: #fff;
+    color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: $text;
+    }
+  }
+}
+/* /btn */
