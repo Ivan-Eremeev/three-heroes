@@ -17,27 +17,14 @@ window.onload = function () {
   };
   stikyMenu($('#headerSticky'));
 
-  // Swiper | Слайдер
-  if ($('#swiper').length) {
-    const swiper = new Swiper('#swiper', {
-      // Optional parameters
-      slidesPerView: 1,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-
-      // Navigation arrows
+  // Swiper | Слайдер в блоке "бани"
+  if ($('#bathhouseSlider').length) {
+    const bathhouseSlider = new Swiper('#bathhouseSlider', {
+      slidesPerView: 3,
+      spaceBetween: 20,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
+        nextEl: '.bathhouse__arrow--next',
+        prevEl: '.bathhouse__arrow--prev',
       },
     });
   }

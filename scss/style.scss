@@ -67,14 +67,14 @@ $break_xs: 500px;
 $title: #554639;
 $text: #4C4449;
 $brown: #8f7865;
-$grey: #dad3cf;
+$gray: #dad3cf;
 $red: #aa181b;
 $green: #235d0f;
 
 // Подключение файлов
 @import 'blocks/settings';
 @import 'blocks/btn';
-@import 'blocks/title';
+@import 'blocks/head';
 // @import 'hamburgers/hamburgers';
 // @import 'blocks/template';
 // @import 'blocks/popup';

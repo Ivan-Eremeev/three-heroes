@@ -1,8 +1,14 @@
-/* title */
-.title { 
-  font-size: 50px;
-  color: $text;
-  text-align: center;
+/* head */
+.head { 
+  padding: 20px 0 50px;
+  &__title {
+    font-size: 50px;
+    color: $text;
+    text-align: center;
+    span {
+      color: $brown;
+    }
+  }
   &__divider {
     display: flex;
     align-items: center;
@@ -33,4 +39,4 @@
     }
   }
 }
-/* /title */
+/* /head */

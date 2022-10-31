@@ -1,5 +1,132 @@
 /* bathhouse */
 .bathhouse { 
-  padding: 20px 0;
+  margin-bottom: 40px;
+  &__slider {
+    position: relative;
+    #bathhouseSlider {
+      padding: 10px;
+      margin: -10px;
+      overflow: hidden;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 610px;
+    position: relative;
+    transition: .5s;
+    &:before {
+      content: '';
+      display: block;
+      background: linear-gradient(to top, #000 10%, transparent);
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
+    &:hover {
+      box-shadow: 0 0 0 10px $gray;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    padding: 20px;
+    margin-top: auto;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+  }
+  &__title {
+    font-size: 35px;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+    margin-bottom: 12px;
+  }
+  &__persons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    fill: #fff;
+    margin-bottom: 17px;
+    svg {
+      width: 22px;
+      height: 22px;
+      margin-right: 8px;
+    }
+  }
+  &__parameters {
+    padding: 10px 0 20px;
+  }
+  &__time {
+    display: flex;
+    @include col(6);
+    .row {
+      flex-grow: 1;
+    }
+  }
+  &__time-btn {
+    @include col(6);
+    .btn {
+      width: 100%;
+      font-size: 16px;
+      padding: 2px 10px;
+      svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+      }
+    }
+    input {
+      visibility: hidden;
+      position: absolute;
+      &:checked {
+        ~ .btn {
+          background-color: $red;
+          border-color: $red;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__price {
+    @include col(6);
+  }
+  &__buttons {
+    font-size: 18px;
+  }
+  &__btn {
+    @include col(6);
+    .btn {
+      width: 100%;
+      padding: 10px 15px;
+      &:nth-child(1) {
+        margin-right: 12px;
+      }
+    }
+  }
+  &__arrow {
+    color: $brown;
+    &--prev {
+      left: -50px;
+    }
+    &--next {
+      right: -50px;
+    }
+  }
 }
 /* /bathhouse */

@@ -260,8 +260,7 @@ body.lock {
   border-width: 3px;
   border-style: solid;
   outline: none;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 18px;
   text-align: center;
   cursor: pointer;
   -webkit-user-select: none;
@@ -276,20 +275,37 @@ body.lock {
   background-color: rgba(50, 45, 41, 0.6);
   border-color: #fff;
   color: #fff;
+  fill: #fff;
 }
 .btn--white:hover {
   background-color: #fff;
   color: #4C4449;
+  fill: #4C4449;
+}
+.btn--brown {
+  border-color: #8f7865;
+  color: #fff;
+  fill: #fff;
+  opacity: 0.7;
+}
+.btn--brown:hover {
+  opacity: 1;
 }
 
 /* /btn */
-/* title */
-.title {
+/* head */
+.head {
+  padding: 20px 0 50px;
+}
+.head__title {
   font-size: 50px;
   color: #4C4449;
   text-align: center;
 }
-.title__divider {
+.head__title span {
+  color: #8f7865;
+}
+.head__divider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +318,7 @@ body.lock {
   margin-top: 20px;
   fill: #8f7865;
 }
-.title__divider:after {
+.head__divider:after {
   content: "";
   display: block;
   -webkit-box-flex: 1;
@@ -311,14 +327,14 @@ body.lock {
   height: 3px;
   background-color: #8f7865;
 }
-.title__divider svg {
+.head__divider svg {
   width: 35px;
   height: 35px;
   margin: 0 20px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-.title__divider:before {
+.head__divider:before {
   content: "";
   display: block;
   -webkit-box-flex: 1;
@@ -328,7 +344,7 @@ body.lock {
   background-color: #8f7865;
 }
 
-/* /title */
+/* /head */
 /* header */
 .header {
   width: 100%;
@@ -583,6 +599,8 @@ body.lock {
 .welcome__buttons .btn {
   min-width: 308px;
   margin: 0 8px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .welcome__smoke {
   height: 260px;
@@ -607,7 +625,153 @@ body.lock {
 /* /welcome */
 /* bathhouse */
 .bathhouse {
-  padding: 20px 0;
+  margin-bottom: 40px;
+}
+.bathhouse__slider {
+  position: relative;
+}
+.bathhouse__slider #bathhouseSlider {
+  padding: 10px;
+  margin: -10px;
+  overflow: hidden;
+}
+.bathhouse__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 610px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.bathhouse__item:before {
+  content: "";
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #000), to(transparent));
+  background: -o-linear-gradient(bottom, #000 10%, transparent);
+  background: linear-gradient(to top, #000 10%, transparent);
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.bathhouse__item:hover {
+  -webkit-box-shadow: 0 0 0 10px #dad3cf;
+  box-shadow: 0 0 0 10px #dad3cf;
+}
+.bathhouse__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.bathhouse__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.bathhouse__content {
+  padding: 20px;
+  margin-top: auto;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+}
+.bathhouse__title {
+  font-size: 35px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+  margin-bottom: 12px;
+}
+.bathhouse__persons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  fill: #fff;
+  margin-bottom: 17px;
+}
+.bathhouse__persons svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.bathhouse__parameters {
+  padding: 10px 0 20px;
+}
+.bathhouse__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+.bathhouse__time .row {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.bathhouse__time-btn {
+  width: 50%;
+}
+.bathhouse__time-btn .btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 2px 10px;
+}
+.bathhouse__time-btn .btn svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.bathhouse__time-btn input {
+  visibility: hidden;
+  position: absolute;
+}
+.bathhouse__time-btn input:checked ~ .btn {
+  background-color: #aa181b;
+  border-color: #aa181b;
+  opacity: 1;
+}
+.bathhouse__price {
+  width: 50%;
+}
+.bathhouse__buttons {
+  font-size: 18px;
+}
+.bathhouse__btn {
+  width: 50%;
+}
+.bathhouse__btn .btn {
+  width: 100%;
+  padding: 10px 15px;
+}
+.bathhouse__btn .btn:nth-child(1) {
+  margin-right: 12px;
+}
+.bathhouse__arrow {
+  color: #8f7865;
+}
+.bathhouse__arrow--prev {
+  left: -50px;
+}
+.bathhouse__arrow--next {
+  right: -50px;
 }
 
 /* /bathhouse */
