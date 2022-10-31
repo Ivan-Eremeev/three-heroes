@@ -64,7 +64,8 @@ $break_xs: 500px;
 @include font-face("Intro", "../fonts/intro/Intro-Black", 900, normal);
 
 // Цвета
-$text: #554639;
+$title: #554639;
+$text: #4C4449;
 $brown: #8f7865;
 $grey: #dad3cf;
 $red: #aa181b;
@@ -73,6 +74,7 @@ $green: #235d0f;
 // Подключение файлов
 @import 'blocks/settings';
 @import 'blocks/btn';
+@import 'blocks/title';
 // @import 'hamburgers/hamburgers';
 // @import 'blocks/template';
 // @import 'blocks/popup';
@@ -82,6 +84,7 @@ $green: #235d0f;
 // @import 'blocks/counter';
 @import 'blocks/header';
 @import 'blocks/welcome';
+@import 'blocks/bathhouse';
 
 @import 'blocks/footer';
 // @import 'blocks/menu';
