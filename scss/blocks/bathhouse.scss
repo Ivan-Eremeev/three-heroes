@@ -28,6 +28,18 @@
     }
     &:hover {
       box-shadow: 0 0 0 10px $gray;
+      .bathhouse__parameters {
+        > .row {
+          margin-bottom: 0;
+        }
+      }
+      .bathhouse__img {
+        img {
+          &:nth-child(2) {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
   &__img {
@@ -41,6 +53,13 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.8s;
+      &:nth-child(2) {
+        opacity: 0;
+      }
     }
   }
   &__content {
@@ -70,7 +89,12 @@
     }
   }
   &__parameters {
-    padding: 10px 0 20px;
+    overflow: hidden;
+    > .row {
+      padding: 10px 0 20px;
+      margin-bottom: -70px;
+      transition: .5s;
+    }
   }
   &__time {
     display: flex;
@@ -89,6 +113,7 @@
         width: 15px;
         height: 15px;
         margin-right: 5px;
+        flex-shrink: 0;
       }
     }
     input {
@@ -126,6 +151,47 @@
     }
     &--next {
       right: -50px;
+    }
+  }
+  @media (max-width: $break_xl) {
+    &__arrow {
+      color: #fff;
+      &--prev {
+        left: 10px;
+      }
+      &--next {
+        right: 10px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__item {
+      height: 500px;
+    }
+    &__title {
+      font-size: 26px;
+    }
+    &__parameters {
+      > .row {
+        margin-bottom: 0;
+      }
+    }
+    &__time {
+      .btn {
+        font-size: 12px;
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+    &__price {
+      font-size: 14px;
+    }
+    &__btn {
+      .btn {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -348,6 +348,19 @@ body.lock {
   height: 3px;
   background-color: #8f7865;
 }
+@media (max-width: 768px) {
+  .head__title {
+    font-size: 40px;
+  }
+  .head__divider {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .head__title {
+    font-size: 30px;
+  }
+}
 
 /* /head */
 /*!
@@ -1077,6 +1090,12 @@ body.lock {
   -webkit-box-shadow: 0 0 0 10px #dad3cf;
   box-shadow: 0 0 0 10px #dad3cf;
 }
+.bathhouse__item:hover .bathhouse__parameters > .row {
+  margin-bottom: 0;
+}
+.bathhouse__item:hover .bathhouse__img img:nth-child(2) {
+  opacity: 1;
+}
 .bathhouse__img {
   position: absolute;
   top: 0;
@@ -1090,6 +1109,15 @@ body.lock {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.bathhouse__img img:nth-child(2) {
+  opacity: 0;
 }
 .bathhouse__content {
   padding: 20px;
@@ -1124,7 +1152,14 @@ body.lock {
   margin-right: 8px;
 }
 .bathhouse__parameters {
+  overflow: hidden;
+}
+.bathhouse__parameters > .row {
   padding: 10px 0 20px;
+  margin-bottom: -70px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .bathhouse__time {
   display: -webkit-box;
@@ -1149,6 +1184,8 @@ body.lock {
   width: 15px;
   height: 15px;
   margin-right: 5px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 .bathhouse__time-btn input {
   visibility: hidden;
@@ -1183,6 +1220,41 @@ body.lock {
 }
 .bathhouse__arrow--next {
   right: -50px;
+}
+@media (max-width: 1400px) {
+  .bathhouse__arrow {
+    color: #fff;
+  }
+  .bathhouse__arrow--prev {
+    left: 10px;
+  }
+  .bathhouse__arrow--next {
+    right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .bathhouse__item {
+    height: 500px;
+  }
+  .bathhouse__title {
+    font-size: 26px;
+  }
+  .bathhouse__parameters > .row {
+    margin-bottom: 0;
+  }
+  .bathhouse__time .btn {
+    font-size: 12px;
+  }
+  .bathhouse__time .btn svg {
+    width: 10px;
+    height: 10px;
+  }
+  .bathhouse__price {
+    font-size: 14px;
+  }
+  .bathhouse__btn .btn {
+    font-size: 16px;
+  }
 }
 
 /* /bathhouse */

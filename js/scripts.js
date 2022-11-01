@@ -20,12 +20,20 @@ window.onload = function () {
   // Swiper | Слайдер в блоке "бани"
   if ($('#bathhouseSlider').length) {
     const bathhouseSlider = new Swiper('#bathhouseSlider', {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 20,
       navigation: {
         nextEl: '.bathhouse__arrow--next',
         prevEl: '.bathhouse__arrow--prev',
       },
+      breakpoints: {
+        500: {
+          slidesPerView: 2,
+        },
+        1050: {
+          slidesPerView: 3,
+        }
+      }
     });
   }
 
