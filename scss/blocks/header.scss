@@ -175,6 +175,9 @@
   &__close-menu {
     display: none;
   }
+  &__buttons {
+    display: none;
+  }
   @media (max-width: $break_xl) {
     &__logo {
       display: block;
@@ -191,10 +194,17 @@
   @media (max-width: $break_md) {
     display: flex;
     flex-direction: column;
+    position: static;
+    background-image: url(../img/mobilebg-header.webp);
+    background-size: cover;
     &__top {
+      display: flex;  
+      flex-direction: column;
+      min-height: 100vh;
       order: 1;
       background: transparent;
       padding-top: 150px;
+      padding-bottom: 30px;
       .wrapper {
         flex-direction: column;
       }
@@ -211,6 +221,7 @@
       margin-right: 0;
       order: 1;
       text-shadow: 0px 1px 1px #000;
+      margin-bottom: 30px;
       a {
         margin-top: 10px;
       }
@@ -264,6 +275,23 @@
       margin-bottom: 30px;
       a {
         fill: $green !important;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      flex-wrap: wrap;
+      .btn {
+        min-width: 300px;
+        margin: 8px;
+        &:nth-child(2) {
+          background-color: $green;
+          border-color: $green;
+          &:hover {
+            color: #fff;
+          }
+        }
       }
     }
     &__hamburger {
@@ -355,6 +383,12 @@
         a {
           font-size: 16px;
         }
+      }
+    }
+    &__buttons {
+      .btn {
+        width: 100%;
+        min-width: 0;
       }
     }
   }
