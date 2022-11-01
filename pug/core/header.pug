@@ -28,7 +28,7 @@ header#headerSticky.header
             svg(class="icon-ordercall")
               use(xlink:href="img/sprite.svg#ordercall")
             | Заказать звонок
-      .header__social 
+      .header__social.header__social--desktop
         a.header__social-icon(href="#") 
           svg(class="icon-telegram")
             use(xlink:href="img/sprite.svg#telegram")
@@ -62,6 +62,16 @@ header#headerSticky.header
             a(href="#") События
           li 
             a(href="#") Контакты
+        .header__social.header__social--mobile 
+          a.header__social-icon(href="#") 
+            svg(class="icon-telegram")
+              use(xlink:href="img/sprite.svg#telegram")
+          a.header__social-icon(href="#") 
+            svg(class="icon-vk")
+              use(xlink:href="img/sprite.svg#vk")
+          a.header__social-icon(href="#") 
+            svg(class="icon-youtube")
+              use(xlink:href="img/sprite.svg#youtube")
         .header__close-menu.js-drop-close(data-drop="menu")
       .header__hamburger.hamburger.hamburger--squeeze.js-drop-menu(data-drop="menu")
         .hamburger-box
