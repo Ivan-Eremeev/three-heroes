@@ -37,6 +37,25 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Слайдер "акции"
+  if ($('#salesSlider').length) {
+    const salesSlider = new Swiper('#salesSlider', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+      pagination: {
+        el: '.sales__pagination',
+        clickable: true,
+      },
+    });
+  }
+
   // // Air Datepicker | Календарь
   // new AirDatepicker('#airDatepicker', {
   //   position: 'right top',

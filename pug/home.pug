@@ -25,10 +25,12 @@ block content
 
       // head
       .head
-        h1.head__title Русские бани «Три Богатыря»
+        .wrapper
+          h1.head__title Русские бани «Три Богатыря»
           .head__divider 
             svg(class="icon-3b-divider")
               use(xlink:href="img/sprite.svg#3b-divider")
+            
       // /head
 
       // bathhouse
@@ -176,5 +178,59 @@ block content
               .bathhouse__arrow.bathhouse__arrow--prev.swiper-button-prev
               .bathhouse__arrow.bathhouse__arrow--next.swiper-button-next
       // /bathhouse
+
+      // head
+      .head
+        .wrapper
+          h2.head__title Акции
+          .head__divider 
+            svg(class="icon-3b-divider")
+              use(xlink:href="img/sprite.svg#3b-divider")
+          a(href="#").head__more 
+            span Все акции
+            svg(class="icon-long-arrow-right")
+              use(xlink:href="img/sprite.svg#long-arrow-right")
+      // /head
+
+      // sales
+      .sales
+        .wrapper 
+          .row.gy
+            .sales__slider 
+              #salesSlider 
+                .swiper-wrapper 
+                  .swiper-slide 
+                    .sales__banner 
+                      .sales__content 
+                        .sales__title 2+2=4
+                        .sales__text При бронировании 2 часов сейчас и 2 часов потом вы получаете 4 часа
+                        a(href="#").sales__link Выбрать баню
+                      .sales__banner-img 
+                        img(src="img/banner1.webp", alt="")
+                  .swiper-slide 
+                    .sales__banner 
+                      .sales__content 
+                        .sales__title 2+2=4
+                        .sales__text При бронировании 2 часов сейчас и 2 часов потом вы получаете 4 часа 
+                        a(href="#").sales__link Выбрать баню
+                      .sales__banner-img 
+                        img(src="img/banner1.webp", alt="")
+                  .swiper-slide 
+                    .sales__banner 
+                      .sales__content 
+                        .sales__title 2+2=4
+                        .sales__text При бронировании 2 часов сейчас и 2 часов потом вы получаете 4 часа 
+                        a(href="#").sales__link Выбрать баню
+                      .sales__banner-img 
+                        img(src="img/banner1.webp", alt="")
+                .swiper-pagination.sales__pagination 
+            .sales__images 
+              .sales__images-col 
+                .sales__img 
+                  img(src="img/banner2.webp", alt="")
+              .sales__images-col 
+                .sales__img.sales__img--sertificate
+                  span Подарочный <br>сертификат
+      // /sales
 
     include core/footer.pug

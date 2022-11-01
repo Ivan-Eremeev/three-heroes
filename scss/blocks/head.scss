@@ -1,7 +1,11 @@
 /* head */
 .head { 
   padding: 20px 0 50px;
+  .wrapper {
+    position: relative;
+  }
   &__title {
+    padding: 0 200px;
     font-size: 50px;
     color: $text;
     text-align: center;
@@ -38,12 +42,42 @@
       background-color: $brown;
     }
   }
+  &__more {
+    display: inline-flex;
+    align-items: center;
+    fill: $brown;
+    color: $text;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    span {
+      text-decoration: underline;
+    }
+    svg {
+      width: 60px;
+      height: 20px;
+      opacity: 0.4;
+      margin-left: 16px;
+      transition: .3s;
+    }
+    &:hover {
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+  @media (max-width: $break_md) {
+    &__title {
+      padding: 0;
+    }
+    &__more {
+      position: static;
+      margin-top: 20px;
+    }
+  }
   @media (max-width: $break_sm) {
     &__title {
       font-size: 40px;
-    }
-    &__divider {
-      padding: 0 10px;
     }
   }
   @media (max-width: $break_xs) {

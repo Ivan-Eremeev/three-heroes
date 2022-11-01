@@ -1,0 +1,96 @@
+/* sales */
+.sales { 
+  margin-bottom: 35px;
+  &__container {
+    
+  }
+  &__slider {
+    @include col(8);
+    overflow: hidden;
+    position: relative;
+  }
+  &__banner {
+    height: 420px;
+    position: relative;
+  }
+  &__content {
+    max-width: 340px;
+    height: 100%;
+    padding: 30px 10px 60px 50px;
+    background-color: $red;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 17px;
+  }
+  &__text {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  &__link {
+    display: block;
+    font-size: 35px;
+    text-decoration: underline;
+    color: #fff;
+    &:hover {
+      color: $gray;
+    }
+  }
+  &__banner-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 330px;
+    right: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__pagination {
+    .swiper-pagination-bullet {
+      opacity: 1;
+      background-color: $gray;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $text;
+    }
+  }
+  &__images {
+    @include col(4);
+    .row {
+      height: 100%;
+    }
+  }
+  &__images-col {
+    width: 100%;
+    height: 50%;
+    &:nth-child(1) {
+      padding-bottom: 10px;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &--sertificate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #679faf;
+      font-size: 35px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+/* /sales */
