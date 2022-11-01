@@ -43,11 +43,11 @@ window.onload = function () {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
-      // autoplay: {
-      //   delay: 4000,
-      //   pauseOnMouseEnter: true,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 4000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      },
       speed: 1000,
       pagination: {
         el: '.sales__pagination',
