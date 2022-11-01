@@ -1372,6 +1372,18 @@ body.lock {
   position: relative;
   z-index: 2;
 }
+.sales__content:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #aa181b), color-stop(50.5%, transparent));
+  background: -o-linear-gradient(left top, #aa181b 50%, transparent 50.5%);
+  background: linear-gradient(to right bottom, #aa181b 50%, transparent 50.5%);
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
 .sales__title {
   font-size: 100px;
   font-weight: 900;
