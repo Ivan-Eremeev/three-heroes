@@ -29,13 +29,22 @@ header#headerSticky.header
               use(xlink:href="img/sprite.svg#ordercall")
             | Заказать звонок
       .header__social 
+        a.header__social-icon(href="#") 
+          svg(class="icon-telegram")
+            use(xlink:href="img/sprite.svg#telegram")
+        a.header__social-icon(href="#") 
+          svg(class="icon-vk")
+            use(xlink:href="img/sprite.svg#vk")
+        a.header__social-icon(href="#") 
+          svg(class="icon-youtube")
+            use(xlink:href="img/sprite.svg#youtube")
   .header__bottom 
     .wrapper 
       .header__logo 
         a(href="#").header__logo-link 
           img(src="img/3blogo-light.svg", alt="")
         .header__logo-text Правильные русские бани
-      nav.header__nav 
+      nav.header__nav#menu 
         ul.header__list 
           li 
             a(href="#") Парения
@@ -53,5 +62,8 @@ header#headerSticky.header
             a(href="#") События
           li 
             a(href="#") Контакты
-
+        .header__close-menu.js-drop-close(data-drop="menu")
+      .header__hamburger.hamburger.hamburger--squeeze.js-drop-menu(data-drop="menu")
+        .hamburger-box
+          .hamburger-inner
 //	/header
