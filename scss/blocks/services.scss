@@ -1,0 +1,126 @@
+/* services */
+.services { 
+  margin-bottom: 50px;
+  &__container {
+    height: 416px;
+  }
+  &__grid {  display: grid;
+    height: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "services__col1 services__col2 services__col4"
+      "services__col1 services__col3 services__col5";
+  }
+  &__col1 { 
+    grid-area: services__col1;
+    position: relative;
+    @include col-sm(6);
+    @include col-xs(12);
+  }
+  &__col2 { 
+    grid-area: services__col2;
+    position: relative;
+    @include col-sm(6);
+    @include col-xs(12);
+  }
+  &__col3 { 
+    grid-area: services__col3;
+    position: relative;
+    @include col-sm(6);
+    @include col-xs(12);
+  }
+  &__col4 { 
+    grid-area: services__col4;
+    position: relative;
+    @include col-sm(6);
+    @include col-xs(12);
+  }
+  &__col5 { 
+    grid-area: services__col5;
+    position: relative;
+    @include col-sm(6);
+    @include col-xs(12);
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .5s;
+    }
+    &:after {
+      content: '';
+      display: block;
+      border: 10px solid transparent;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: .5s;
+    }
+    @media (min-width: $break_sm + 1) {
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+        &:after {
+          border-color: $gray;
+        }
+      }
+    }
+  }
+  &__title {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    right: 16px;
+    z-index: 2;
+    span {
+      display: inline-block;
+      padding: 3px 10px;
+      background-color: #6b0f11;
+      font-size: 26px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__container {
+      height: auto;
+    }
+    &__grid {
+      @include row();
+      justify-content: center;
+      gap: 0;
+      margin-top: -10px;
+      > * {
+        padding-top: 10px;
+      }
+    }
+    &__img {
+      height: 200px;
+      position: static;
+      img {
+        display: block;
+      }
+    }
+    &__title {
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+/* /services */
