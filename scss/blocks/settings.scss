@@ -8,12 +8,14 @@ input,
 textarea {
   font-family: "Intro", Arial, sans-serif;
   font-size: 16px;
+  color: $text;
 }
 body {
   min-width: 319px;
   background-color: #f7f3f0;
   font-family: "Intro", Arial, sans-serif;
   font-size: 16px;
+  color: $text;
   &.lock {
     overflow: hidden;
   }
