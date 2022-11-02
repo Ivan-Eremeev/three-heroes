@@ -1359,6 +1359,11 @@ body.lock {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 1050px) {
+  .sales__slider {
+    width: 100%;
+  }
+}
 .sales__banner {
   height: 420px;
   position: relative;
@@ -1425,9 +1430,6 @@ body.lock {
 .sales__images {
   width: 33.3333333333%;
 }
-.sales__images .row {
-  height: 100%;
-}
 .sales__images-col {
   width: 100%;
   height: 50%;
@@ -1459,6 +1461,89 @@ body.lock {
   font-size: 35px;
   color: #fff;
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .sales__banner {
+    height: 350px;
+  }
+  .sales__content {
+    width: 300px;
+  }
+  .sales__content:after {
+    width: 150px;
+  }
+  .sales__title {
+    font-size: 80px;
+  }
+  .sales__text {
+    font-size: 20px;
+  }
+  .sales__link {
+    font-size: 26px;
+  }
+  .sales__banner-img {
+    left: 200px;
+  }
+}
+@media (max-width: 1050px) {
+  .sales__banner-img {
+    left: 10%;
+  }
+  .sales__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sales__images-col {
+    height: 100%;
+    width: 50%;
+  }
+  .sales__images-col:nth-child(1) {
+    padding-bottom: 0;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .sales__img--sertificate {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .sales__banner {
+    height: 270px;
+  }
+  .sales__banner-img {
+    left: 40%;
+  }
+  .sales__content {
+    width: 200px;
+    padding: 20px 10px 20px 30px;
+  }
+  .sales__content:after {
+    width: 100px;
+  }
+  .sales__title {
+    font-size: 50px;
+  }
+  .sales__text {
+    font-size: 16px;
+  }
+  .sales__link {
+    font-size: 20px;
+  }
+  .sales__images {
+    display: block;
+  }
+  .sales__images-col {
+    height: 270px;
+    width: 100%;
+  }
+  .sales__images-col:nth-child(1) {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
 }
 
 /* /sales */
