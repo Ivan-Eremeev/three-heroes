@@ -1,0 +1,35 @@
+extends core/base.pug
+
+block title 
+  title Навигаця по страницам
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    main.content 
+
+      // page-head
+      .page-head
+        .page-head__img 
+          img(src="img/reservation-head.webp", alt="")
+        .page-head__smoke 
+          img(src="img/smoke.png", alt="")
+        .wrapper 
+          .page-head__title ОНЛАЙН БРОНИРОВАНИЕ
+      // /page-head
+
+      // head
+      .head
+        .wrapper
+          h1.head__title 
+            .head__title-italic Заполнить 
+            | заявку
+          .head__divider 
+            svg(class="icon-3b-divider")
+              use(xlink:href="img/sprite.svg#3b-divider")
+      // /head
+
+    include core/footer.pug

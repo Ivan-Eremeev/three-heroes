@@ -15,7 +15,7 @@
 	<body> 
 		<div class="page"> 
 			<!-- header-->
-			<header class="header header--dark" id="headerSticky">
+			<header class="header" id="headerSticky">
 				<div class="header__top"> 
 					<div class="wrapper"> 
 						<div class="header__address"> 
@@ -65,7 +65,7 @@
 						<nav class="header__nav" id="menu"> 
 							<ul class="header__list"> 
 								<li> <a href="#">Парения</a></li>
-								<li class="header__has-children"><a href="#">Бани</a>
+								<li class="header__has-children"> <a href="#">Бани</a>
 									<ul class="header__submenu"> 
 										<li> <a href="#">Илья Муромец</a></li>
 										<li> <a href="#">Алеша Попович</a></li>
@@ -101,15 +101,29 @@
 			</header>
 			<!--	/header-->
 			<main class="content"> 
-				<div class="navpage"> 
-					<div class="wrapper">
-						<h1>Навигаця по страницам</h1>
-						<ul> 
-							<li> <a href="home.html">Главная</a></li>
-							<li> <a href="reservation.html">Бронирование</a></li>
-						</ul>
+				<!-- page-head-->
+				<div class="page-head">
+					<div class="page-head__img"> <img src="img/reservation-head.webp" alt=""></div>
+					<div class="page-head__smoke"> <img src="img/smoke.png" alt=""></div>
+					<div class="wrapper"> 
+						<div class="page-head__title">ОНЛАЙН БРОНИРОВАНИЕ</div>
 					</div>
 				</div>
+				<!-- /page-head-->
+				<!-- head-->
+				<div class="head">
+					<div class="wrapper">
+						<h1 class="head__title"> 
+							<div class="head__title-italic">Заполнить </div>заявку
+						</h1>
+						<div class="head__divider"> 
+							<svg class="icon-3b-divider">
+								<use xlink:href="img/sprite.svg#3b-divider"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<!-- /head-->
 			</main>
 			<!-- footer-->
 			<footer class="footer"> 
