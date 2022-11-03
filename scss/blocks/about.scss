@@ -61,6 +61,7 @@
     }
   }
   @media (max-width: $break_md) {
+    margin-bottom: 50px;
     &__img {
       display: none;
     }
@@ -74,6 +75,7 @@
     }
   }
   @media (max-width: $break_xs) {
+    margin-bottom: 20px;
     &__text {
       column-count: 1;
     }
