@@ -1,5 +1,37 @@
 window.onload = function () {
 
+  // Вложенное меню
+  function submenu() {
+    let item = $('.header__has-children');
+    let submenu = $('.header__submenu');
+    item.on('click', function () {
+      let itemCurrent = $(this);
+      let submenuCurrent = itemCurrent.find('.header__submenu');
+      if ($(window).width() < 1050) {
+        if (!$(this).hasClass('active')) {
+          item.removeClass('active');
+          itemCurrent.addClass('active');
+          submenu.stop().slideUp().removeClass('open');
+          submenuCurrent.stop().slideDown().addClass('open');
+        }else {
+          itemCurrent.removeClass('active');
+          submenuCurrent.stop().slideUp().removeClass('open');
+        }
+      }
+    })
+    hideSubmenu();
+    $(window).resize(function () {
+      hideSubmenu();
+    });
+    function hideSubmenu() {
+      if ($(window).width() >= 1050) {
+        item.removeClass('active');
+        submenu.removeClass('open').attr('style','');
+      }
+    }
+  }
+  submenu();
+
   // Липкое меню.
   function stikyMenu(header) {
     let headerTop = header.offset().top;
