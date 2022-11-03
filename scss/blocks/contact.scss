@@ -1,0 +1,42 @@
+/* contact */
+.contact { 
+  padding-top: 20px;
+  &__head {
+    margin-bottom: 22px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 50px;
+    color: $title;
+  }
+  &__address {
+    display: flex;
+    fill: $title;
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__map {
+    height: 420px;
+    border-top: 10px solid $gray;
+    border-bottom: 10px solid $gray;
+    #contactMap {
+      height: 100%;
+    }
+  }
+}
+/* /contact */
