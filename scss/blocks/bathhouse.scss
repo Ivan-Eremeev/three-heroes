@@ -145,7 +145,14 @@
     }
   }
   &__arrow {
-    color: $brown;
+    fill: $brown;
+    svg {
+      width: 27px;
+      height: 43px;
+    }
+    &:after {
+      display: none;
+    }
     &--prev {
       left: -50px;
     }
@@ -155,7 +162,7 @@
   }
   @media (max-width: $break_xl) {
     &__arrow {
-      color: #fff;
+      fill: #fff;
       &--prev {
         left: 10px;
       }
