@@ -1,0 +1,67 @@
+/* gallery */
+.gallery { 
+  margin-bottom: 135px;
+  &__grid {  display: grid;
+    height: 513px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gallery__col--1 gallery__col--3 gallery__col--5 gallery__col--6"
+      "gallery__col--2 gallery__col--4 gallery__col--5 gallery__col--7";
+  }
+  &__col {
+    position: relative;
+    @include col-sm(6);
+  }
+  &__col--1 { grid-area: gallery__col--1; }
+  &__col--2 { grid-area: gallery__col--2; }
+  &__col--3 { grid-area: gallery__col--3; }
+  &__col--4 { grid-area: gallery__col--4; }
+  &__col--5 { grid-area: gallery__col--5; }
+  &__col--6 { grid-area: gallery__col--6; }
+  &__col--7 { grid-area: gallery__col--7; 
+    @include col-sm(12);
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: $break_md) {
+    &__grid {
+      height: 400px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__grid {
+      height: auto;
+      @include row();
+      margin-top: -10px;
+      gap: 0;
+      > * {
+        padding-top: 10px;
+      }
+    }
+    &__img {
+      height: 250px;
+      position: static;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__img {
+      height: 200px;
+    }
+  }
+}
+/* /gallery */

@@ -178,6 +178,9 @@
   &__buttons {
     display: none;
   }
+  &--dark {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
   @media (max-width: $break_xl) {
     &__logo {
       display: block;
