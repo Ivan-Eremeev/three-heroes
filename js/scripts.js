@@ -345,6 +345,8 @@ window.onload = function () {
       }),
       myMap.geoObjects
         .add(myPlacemark);
+      // Отключить изменение масштаба колесом мыши
+      myMap.behaviors.disable('scrollZoom');
     });
   }
 
