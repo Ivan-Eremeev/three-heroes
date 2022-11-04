@@ -130,6 +130,7 @@
     }
   }
   @media (max-width: $break_xs) {
+    margin-bottom: 50px;
     &__calendar {
       .air-datepicker {
         width: 100%;

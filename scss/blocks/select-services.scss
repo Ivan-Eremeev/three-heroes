@@ -1,0 +1,68 @@
+/* select-services */
+.select-services { 
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  .subtitle {
+    margin-bottom: 35px;
+  }
+  &__slider {
+    position: relative;
+    .swiper-slide {
+      height: auto;
+    }
+    #selectServicesSlider {
+      overflow: hidden;
+      padding: 20px;
+      margin: -20px;
+    }
+  }
+  &__arrow {
+    fill: $brown;
+    opacity: 0.4;
+    transition: .3s;
+    svg {
+      width: 20px;
+      height: 44px;
+    }
+    &:after {
+      display: none;
+    }
+    &--prev {
+      margin-left: -50px;
+    }
+    &--next {
+      margin-right: -50px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &.swiper-button-disabled {
+      opacity: 0;
+    }
+  }
+  @media (max-width: $break_xl) {
+    &__arrow {
+      &--prev {
+        margin-left: -25px;
+      }
+      &--next {
+        margin-right: -25px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__arrow {
+      &--prev {
+        margin-left: -20px;
+      }
+      &--next {
+        margin-right: -20px;
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    margin-bottom: 30px;
+  }
+}
+/* /select-services */

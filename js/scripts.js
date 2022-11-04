@@ -107,6 +107,29 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Слайдер "добавить услуги"
+  if ($('#selectServicesSlider').length) {
+    const selectServicesSlider = new Swiper('#selectServicesSlider', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.select-services__arrow--next',
+        prevEl: '.select-services__arrow--prev',
+      },
+      breakpoints: {
+        500: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1050: {
+          slidesPerView: 4,
+        }
+      }
+    });
+  }
+
   // Air Datepicker | Календарь
   new AirDatepicker('#calendar', {
     inline: true,

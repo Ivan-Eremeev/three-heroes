@@ -170,4 +170,58 @@ block content
                       use(xlink:href="img/sprite.svg#long-arrow-right")
         // /select-bathhouse
 
+        // select-services
+        .select-services
+          .wrapper 
+            .subtitle 
+              h2.subtitle__text Добавить услуги и парения
+              svg(class="icon-3b-divider-line")
+                use(xlink:href="img/sprite.svg#3b-divider-line")
+            .select-services__slider 
+              #selectServicesSlider 
+                .swiper-wrapper 
+                  .swiper-slide 
+                    .select-bathhouse__item 
+                      input#services0(type="checkbox", name="services" checked)
+                      label(for="services0") 
+                        .select-bathhouse__name Аромо-парение
+                        .select-bathhouse__price 15 мин - 1 000 р.
+                  .swiper-slide 
+                    .select-bathhouse__item 
+                      input#services1(type="checkbox", name="services")
+                      label(for="services1") 
+                        .select-bathhouse__name парение "Купеческое"
+                        .select-bathhouse__price 15 мин - 2 500 р.
+                  .swiper-slide 
+                    .select-bathhouse__item 
+                      input#services2(type="checkbox", name="services")
+                      label(for="services2") 
+                        .select-bathhouse__name Парение "Боярское"
+                        .select-bathhouse__price 30 мин - 3 000 р.
+                  .swiper-slide 
+                    .select-bathhouse__item 
+                      input#services3(type="checkbox", name="services")
+                      label(for="services3") 
+                        .select-bathhouse__name Мыльный СПА массаж
+                        .select-bathhouse__price 40 мин - 1 500 р.
+                  .swiper-slide 
+                    .select-bathhouse__item 
+                      input#services4(type="checkbox", name="services")
+                      label(for="services4") 
+                        .select-bathhouse__name парение "Купеческое"
+                        .select-bathhouse__price 15 мин - 2 500 р.
+                  .swiper-slide 
+                    .select-bathhouse__item 
+                      input#services5(type="checkbox", name="services")
+                      label(for="services5") 
+                        .select-bathhouse__name Аромо-парение
+                        .select-bathhouse__price 15 мин - 1 000 р.
+              .select-services__arrow.select-services__arrow--prev.swiper-button-prev
+                svg(class="icon-arrow-left")
+                  use(xlink:href="img/sprite.svg#arrow-left")
+              .select-services__arrow.select-services__arrow--next.swiper-button-next
+                svg(class="icon-arrow-right")
+                  use(xlink:href="img/sprite.svg#arrow-right")
+        // /select-services
+
     include core/footer.pug
