@@ -1,0 +1,29 @@
+/* subtitle */
+.subtitle {
+  display: flex;
+  align-items: center;
+  fill: $brown;
+  &__text {
+    margin-right: 15px;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: italic;
+    color: $text;
+    span {
+      color: $brown;
+    }
+  }
+  svg {
+    max-width: 178px;
+    max-height: 7px;
+  }
+  @media (max-width: $break_xs) {
+    &__text {
+      font-size: 30px;
+    }
+    svg {
+      width: 100px;
+    }
+  }
+}
+/* /subtitle */

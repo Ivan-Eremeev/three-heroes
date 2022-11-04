@@ -13,7 +13,7 @@
   }
   &__col {
     @include col(6);
-    @include col-md(12);
+    @include col-sm(12);
     > .row {
       margin-top: -34px;
       margin-left: -20px;
@@ -25,6 +25,8 @@
   }
   &__col-inner-6 {
     @include col(6);
+    @include col-md(12);
+    @include col-sm(6);
     @include col-xs(12);
   }
   &__col-inner-12 {

@@ -88,6 +88,25 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Слайдер "выбрать баню"
+  if ($('#selectBathhouseSlider').length) {
+    const selectBathhouseSlider = new Swiper('#selectBathhouseSlider', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+      pagination: {
+        el: '.select-bathhouse__pagination',
+        clickable: true,
+      },
+    });
+  }
+
   // Air Datepicker | Календарь
   new AirDatepicker('#calendar', {
     inline: true,

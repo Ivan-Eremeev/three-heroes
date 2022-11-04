@@ -613,6 +613,40 @@ body.lock {
   background-color: #aa181b;
 }
 
+/* subtitle */
+.subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  fill: #8f7865;
+}
+.subtitle__text {
+  margin-right: 15px;
+  font-size: 35px;
+  font-weight: normal;
+  font-style: italic;
+  color: #4C4449;
+}
+.subtitle__text span {
+  color: #8f7865;
+}
+.subtitle svg {
+  max-width: 178px;
+  max-height: 7px;
+}
+@media (max-width: 500px) {
+  .subtitle__text {
+    font-size: 30px;
+  }
+  .subtitle svg {
+    width: 100px;
+  }
+}
+
+/* /subtitle */
 /* counter */
 .counter {
   display: -webkit-box;
@@ -2325,7 +2359,7 @@ body.lock {
 .form__col {
   width: 50%;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 768px) {
   .form__col {
     width: 100%;
   }
@@ -2340,6 +2374,16 @@ body.lock {
 }
 .form__col-inner-6 {
   width: 50%;
+}
+@media screen and (max-width: 1050px) {
+  .form__col-inner-6 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__col-inner-6 {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 500px) {
   .form__col-inner-6 {
@@ -2489,6 +2533,192 @@ body.lock {
 }
 
 /* /form */
+/* select-bathhouse */
+.select-bathhouse {
+  margin-bottom: 80px;
+}
+.select-bathhouse .subtitle {
+  margin-bottom: 40px;
+}
+.select-bathhouse .wrapper > .row {
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.select-bathhouse .wrapper > .row > * {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.select-bathhouse__col {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .select-bathhouse__col {
+    width: 100%;
+  }
+}
+.select-bathhouse__items > .row {
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.select-bathhouse__items > .row > * {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.select-bathhouse__col-item {
+  width: 50%;
+}
+@media screen and (max-width: 1050px) {
+  .select-bathhouse__col-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .select-bathhouse__col-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .select-bathhouse__col-item {
+    width: 100%;
+  }
+}
+.select-bathhouse__item {
+  height: 100%;
+}
+.select-bathhouse__item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 13px;
+  border: 4px solid #ece6e1;
+  background-color: transparent;
+  text-align: center;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.select-bathhouse__item label:hover {
+  border-color: #dad3cf;
+}
+.select-bathhouse__item input {
+  visibility: hidden;
+  position: absolute;
+}
+.select-bathhouse__item input:checked ~ label {
+  background-color: #fff;
+  border-color: #fff;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(62, 27, 4, 0.5);
+  box-shadow: 0 2px 20px 0 rgba(62, 27, 4, 0.5);
+}
+.select-bathhouse__item input:checked ~ label .select-bathhouse__name {
+  color: #331408;
+}
+.select-bathhouse__item input:checked ~ label .select-bathhouse__price {
+  font-weight: 900;
+  color: #aa181b;
+}
+.select-bathhouse__name {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.select-bathhouse__price {
+  font-size: 16px;
+  font-weight: 300;
+}
+.select-bathhouse__slider {
+  margin-top: 20px;
+  border: 10px solid #dad3cf;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.select-bathhouse__img {
+  height: 400px;
+}
+.select-bathhouse__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.select-bathhouse__img-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.select-bathhouse__img-name {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.select-bathhouse__img-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #4C4449;
+  fill: #8f7865;
+}
+.select-bathhouse__img-more span {
+  text-decoration: underline;
+  margin-right: 10px;
+}
+.select-bathhouse__img-more svg {
+  width: 50px;
+  height: 20px;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.select-bathhouse__img-more:hover svg {
+  opacity: 1;
+}
+.select-bathhouse__pagination {
+  bottom: 30px !important;
+}
+.select-bathhouse__pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+.select-bathhouse__pagination .swiper-pagination-bullet-active {
+  background-color: #aa181b;
+}
+@media (max-width: 500px) {
+  .select-bathhouse__img {
+    height: 300px;
+  }
+}
+
+/* /select-bathhouse */
 /* footer */
 .footer {
   border-top: 1px solid #dad3cf;

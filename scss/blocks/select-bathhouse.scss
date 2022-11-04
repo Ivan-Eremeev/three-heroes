@@ -1,0 +1,148 @@
+/* select-bathhouse */
+.select-bathhouse { 
+  margin-bottom: 80px;
+  .subtitle {
+    margin-bottom: 40px;
+  }
+  .wrapper {
+    > .row {
+      margin-left: -30px;
+      margin-top: -30px;
+      > * {
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+    }
+  }
+  &__col {
+    @include col(6);
+    @include col-sm(12);
+  }
+  &__items {
+    > .row {
+      margin-left: -20px;
+      margin-top: -20px;
+      > * {
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+    }
+  }
+  &__col-item {
+    @include col(6);
+    @include col-md(12);
+    @include col-sm(6);
+    @include col-xs(12);
+  }
+  &__item {
+    height: 100%;
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 13px;
+      border: 4px solid #ece6e1;
+      background-color: transparent;
+      text-align: center;
+      transition: .1s;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        border-color: $gray;
+      }
+    }
+    input {
+      visibility: hidden;
+      position: absolute;
+      &:checked {
+        ~ label {
+          background-color: #fff;
+          border-color: #fff;
+          box-shadow: 0 2px 20px 0 rgba(62, 27, 4, 0.5);
+          .select-bathhouse__name {
+            color: #331408;
+          }
+          .select-bathhouse__price {
+            font-weight: 900;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+  &__name {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  &__price {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__slider {
+    margin-top: 20px;
+    border: 10px solid $gray;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  &__img {
+    height: 400px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__img-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__img-name {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &__img-more {
+    display: flex;
+    align-items: center;
+    color: $text;
+    fill: $brown;
+    span {
+      text-decoration: underline;
+      margin-right: 10px;
+    }
+    svg {
+      width: 50px;
+      height: 20px;
+      opacity: 0.5;
+      transition: .3s;
+    }
+    &:hover {
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+  &__pagination {
+    bottom: 30px !important;
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $red;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__img {
+      height: 300px;
+    }
+  }
+}
+/* /select-bathhouse */

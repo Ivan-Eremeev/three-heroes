@@ -107,16 +107,16 @@
 					<div class="page-head__img"> <img src="img/reservation-head.webp" alt=""></div>
 					<div class="page-head__smoke"> <img src="img/smoke.png" alt=""></div>
 					<div class="wrapper"> 
-						<div class="page-head__title">ОНЛАЙН БРОНИРОВАНИЕ</div>
+						<h1 class="page-head__title">ОНЛАЙН БРОНИРОВАНИЕ</h1>
 					</div>
 				</div>
 				<!-- /page-head-->
 				<!-- head-->
 				<div class="head">
 					<div class="wrapper">
-						<h1 class="head__title"> 
+						<h2 class="head__title"> 
 							<div class="head__title-italic">Заполнить </div>заявку
-						</h1>
+						</h2>
 						<div class="head__divider"> 
 							<svg class="icon-3b-divider">
 								<use xlink:href="img/sprite.svg#3b-divider"></use>
@@ -125,48 +125,28 @@
 					</div>
 				</div>
 				<!-- /head-->
-				<!-- form-->
-				<form class="form" action="#">
-					<div class="wrapper"> 
-						<div class="row"> 
-							<div class="form__col"> 
-								<div class="row"> 
-									<div class="form__col-inner-6">
-										<div class="form__input"> 
-											<div class="form__label">Ваше Имя</div>
-											<input type="text" name="name">
-										</div>
-									</div>
-									<div class="form__col-inner-6">
-										<div class="form__input"> 
-											<div class="form__label">Ваш Телефон</div>
-											<input type="text" name="tel" inputmode="tel" placeholder="+7">
-										</div>
-									</div>
-									<div class="form__col-inner-6"> 
-										<div class="form__counter"> 
-											<div class="form__label">Количество гостей</div>
-											<div class="counter js-counter">
-												<div class="counter__btn js-counter-minus"> 
-													<svg class="icon-minus">
-														<use xlink:href="img/sprite.svg#minus"></use>
-													</svg>
-												</div>
-												<div class="counter__input js-counter-input">
-													<input type="text" value="1" maxlength="3">
-												</div>
-												<div class="counter__btn js-counter-plus"> 
-													<svg class="icon-plus">
-														<use xlink:href="img/sprite.svg#plus"></use>
-													</svg>
-												</div>
+				<form action="#"> 
+					<!-- form-->
+					<div class="form">
+						<div class="wrapper"> 
+							<div class="row"> 
+								<div class="form__col"> 
+									<div class="row"> 
+										<div class="form__col-inner-6">
+											<div class="form__input"> 
+												<div class="form__label">Ваше Имя</div>
+												<input type="text" name="name">
 											</div>
 										</div>
-									</div>
-									<div class="form__col-inner-6"> 
-										<div class="form__counter"> 
-											<div class="form__label">Количество часов</div>
-											<div class="form__flex"> 
+										<div class="form__col-inner-6">
+											<div class="form__input"> 
+												<div class="form__label">Ваш Телефон</div>
+												<input type="text" name="tel" inputmode="tel" placeholder="+7">
+											</div>
+										</div>
+										<div class="form__col-inner-6"> 
+											<div class="form__counter"> 
+												<div class="form__label">Количество гостей</div>
 												<div class="counter js-counter">
 													<div class="counter__btn js-counter-minus"> 
 														<svg class="icon-minus">
@@ -174,7 +154,7 @@
 														</svg>
 													</div>
 													<div class="counter__input js-counter-input">
-														<input type="text" value="3" maxlength="3">
+														<input type="text" value="1" maxlength="3">
 													</div>
 													<div class="counter__btn js-counter-plus"> 
 														<svg class="icon-plus">
@@ -182,45 +162,174 @@
 														</svg>
 													</div>
 												</div>
-												<div class="form__radio"> 
-													<input id="day" type="radio" name="time" checked>
-													<label for="day"> 
-														<svg class="icon-sun">
-															<use xlink:href="img/sprite.svg#sun"></use>
-														</svg><span>день</span>
-													</label>
-												</div>
-												<div class="form__radio"> 
-													<input id="night" type="radio" name="time">
-													<label for="night"> 
-														<svg class="icon-stars">
-															<use xlink:href="img/sprite.svg#stars"></use>
-														</svg><span>ночь</span>
-													</label>
+											</div>
+										</div>
+										<div class="form__col-inner-6"> 
+											<div class="form__counter"> 
+												<div class="form__label">Количество часов</div>
+												<div class="form__flex"> 
+													<div class="counter js-counter">
+														<div class="counter__btn js-counter-minus"> 
+															<svg class="icon-minus">
+																<use xlink:href="img/sprite.svg#minus"></use>
+															</svg>
+														</div>
+														<div class="counter__input js-counter-input">
+															<input type="text" value="3" maxlength="3">
+														</div>
+														<div class="counter__btn js-counter-plus"> 
+															<svg class="icon-plus">
+																<use xlink:href="img/sprite.svg#plus"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="form__radio"> 
+														<input id="day" type="radio" name="time" checked>
+														<label for="day"> 
+															<svg class="icon-sun">
+																<use xlink:href="img/sprite.svg#sun"></use>
+															</svg><span>день</span>
+														</label>
+													</div>
+													<div class="form__radio"> 
+														<input id="night" type="radio" name="time">
+														<label for="night"> 
+															<svg class="icon-stars">
+																<use xlink:href="img/sprite.svg#stars"></use>
+															</svg><span>ночь</span>
+														</label>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="form__col-inner-12">
-										<div class="form__textarea"> 
-											<div class="form__label">Комментарий к заявке</div>
-											<textarea> </textarea>
+										<div class="form__col-inner-12">
+											<div class="form__textarea"> 
+												<div class="form__label">Комментарий к заявке</div>
+												<textarea> </textarea>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="form__col"> 
-								<div class="form__calendar-wrap"> 
-									<div class="form__label">Желаемая дата посещения</div>
-									<div class="form__calendar"> 
-										<input id="calendar">
+								<div class="form__col"> 
+									<div class="form__calendar-wrap"> 
+										<div class="form__label">Желаемая дата посещения</div>
+										<div class="form__calendar"> 
+											<input id="calendar">
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- /form-->
+					<!-- select-bathhouse-->
+					<div class="select-bathhouse">
+						<div class="wrapper"> 
+							<div class="row"> 
+								<div class="select-bathhouse__col"> 
+									<div class="subtitle"> 
+										<h2 class="subtitle__text">Выбрать баню</h2>
+										<svg class="icon-3b-divider-line">
+											<use xlink:href="img/sprite.svg#3b-divider-line"></use>
+										</svg>
+									</div>
+									<div class="select-bathhouse__items"> 
+										<div class="row"> 
+											<div class="select-bathhouse__col-item">
+												<div class="select-bathhouse__item"> 
+													<input id="type0" type="radio" name="type" checked>
+													<label for="type0"> 
+														<div class="select-bathhouse__name">Змей Горыныч</div>
+														<div class="select-bathhouse__price">16 000 р.</div>
+													</label>
+												</div>
+											</div>
+											<div class="select-bathhouse__col-item">
+												<div class="select-bathhouse__item"> 
+													<input id="type1" type="radio" name="type">
+													<label for="type1"> 
+														<div class="select-bathhouse__name">Алёша Попович</div>
+														<div class="select-bathhouse__price">от 1 800 р./час</div>
+													</label>
+												</div>
+											</div>
+											<div class="select-bathhouse__col-item">
+												<div class="select-bathhouse__item"> 
+													<input id="type2" type="radio" name="type">
+													<label for="type2"> 
+														<div class="select-bathhouse__name">Добрыня Никитич</div>
+														<div class="select-bathhouse__price">от 3 000 р./час</div>
+													</label>
+												</div>
+											</div>
+											<div class="select-bathhouse__col-item">
+												<div class="select-bathhouse__item"> 
+													<input id="type3" type="radio" name="type">
+													<label for="type3"> 
+														<div class="select-bathhouse__name">Изба здоровья</div>
+														<div class="select-bathhouse__price">от 2 400 р./час</div>
+													</label>
+												</div>
+											</div>
+											<div class="select-bathhouse__col-item">
+												<div class="select-bathhouse__item"> 
+													<input id="type4" type="radio" name="type">
+													<label for="type4"> 
+														<div class="select-bathhouse__name">Василиса</div>
+														<div class="select-bathhouse__price">от 1 800 р./час</div>
+													</label>
+												</div>
+											</div>
+											<div class="select-bathhouse__col-item">
+												<div class="select-bathhouse__item"> 
+													<input id="type5" type="radio" name="type">
+													<label for="type5"> 
+														<div class="select-bathhouse__name">Забава</div>
+														<div class="select-bathhouse__price">от 2 400 р./час</div>
+													</label>
+												</div>
+											</div>
+											<div class="select-bathhouse__col-item">
+												<div class="select-bathhouse__item"> 
+													<input id="type6" type="radio" name="type">
+													<label for="type6"> 
+														<div class="select-bathhouse__name">Илья Муромец</div>
+														<div class="select-bathhouse__price">от 4 500 р./час</div>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="select-bathhouse__col"> 
+									<div class="select-bathhouse__slider"> 
+										<div id="selectBathhouseSlider">
+											<div class="swiper-wrapper"> 
+												<div class="swiper-slide"> 
+													<div class="select-bathhouse__img"> <img src="img/bathhouse-preview/img1.webp" alt=""></div>
+												</div>
+												<div class="swiper-slide"> 
+													<div class="select-bathhouse__img"> <img src="img/bathhouse-preview/img1.webp" alt=""></div>
+												</div>
+												<div class="swiper-slide"> 
+													<div class="select-bathhouse__img"> <img src="img/bathhouse-preview/img1.webp" alt=""></div>
+												</div>
+											</div>
+											<div class="select-bathhouse__pagination swiper-pagination"> </div>
+										</div>
+									</div>
+									<div class="select-bathhouse__img-footer"> 
+										<div class="select-bathhouse__img-name">Баня «Змей Горыныч»</div><a class="select-bathhouse__img-more" href="#"> <span>Подробнее</span>
+											<svg class="icon-long-arrow-right">
+												<use xlink:href="img/sprite.svg#long-arrow-right"></use>
+											</svg></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /select-bathhouse-->
 				</form>
-				<!-- /form-->
 			</main>
 			<!-- footer-->
 			<footer class="footer"> 

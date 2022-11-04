@@ -18,13 +18,13 @@ block content
         .page-head__smoke 
           img(src="img/smoke.png", alt="")
         .wrapper 
-          .page-head__title ОНЛАЙН БРОНИРОВАНИЕ
+          h1.page-head__title ОНЛАЙН БРОНИРОВАНИЕ
       // /page-head
 
       // head
       .head
         .wrapper
-          h1.head__title 
+          h2.head__title 
             .head__title-italic Заполнить 
             | заявку
           .head__divider 
@@ -32,66 +32,142 @@ block content
               use(xlink:href="img/sprite.svg#3b-divider")
       // /head
 
-      // form
-      form(action="#").form
-        .wrapper 
-          .row 
-            .form__col 
-              .row 
-                .form__col-inner-6
-                  .form__input  
-                    .form__label Ваше Имя
-                    input(type="text" name="name")
-                .form__col-inner-6
-                  .form__input  
-                    .form__label Ваш Телефон
-                    input(type="text" name="tel" inputmode="tel" placeholder="+7")
-                .form__col-inner-6 
-                  .form__counter 
-                    .form__label Количество гостей
-                    .counter.js-counter
-                      .counter__btn.js-counter-minus 
-                        svg(class="icon-minus")
-                          use(xlink:href="img/sprite.svg#minus")
-                      .counter__input.js-counter-input
-                        input(type="text" value="1" maxlength="3")
-                      .counter__btn.js-counter-plus 
-                        svg(class="icon-plus")
-                          use(xlink:href="img/sprite.svg#plus")
-                .form__col-inner-6 
-                  .form__counter 
-                    .form__label Количество часов
-                    .form__flex 
+      form(action="#") 
+        // form
+        .form
+          .wrapper 
+            .row 
+              .form__col 
+                .row 
+                  .form__col-inner-6
+                    .form__input  
+                      .form__label Ваше Имя
+                      input(type="text" name="name")
+                  .form__col-inner-6
+                    .form__input  
+                      .form__label Ваш Телефон
+                      input(type="text" name="tel" inputmode="tel" placeholder="+7")
+                  .form__col-inner-6 
+                    .form__counter 
+                      .form__label Количество гостей
                       .counter.js-counter
                         .counter__btn.js-counter-minus 
                           svg(class="icon-minus")
                             use(xlink:href="img/sprite.svg#minus")
                         .counter__input.js-counter-input
-                          input(type="text" value="3" maxlength="3")
+                          input(type="text" value="1" maxlength="3")
                         .counter__btn.js-counter-plus 
                           svg(class="icon-plus")
                             use(xlink:href="img/sprite.svg#plus")
-                      .form__radio  
-                        input#day(type="radio", name="time" checked)
-                        label(for="day") 
-                          svg(class="icon-sun")
-                            use(xlink:href="img/sprite.svg#sun")
-                          span день
-                      .form__radio  
-                        input#night(type="radio", name="time")
-                        label(for="night") 
-                          svg(class="icon-stars")
-                            use(xlink:href="img/sprite.svg#stars")
-                          span ночь
-                .form__col-inner-12
-                  .form__textarea 
-                    .form__label Комментарий к заявке
-                    textarea 
-            .form__col 
-              .form__calendar-wrap 
-                .form__label Желаемая дата посещения
-                .form__calendar 
-                  input#calendar 
-      // /form
+                  .form__col-inner-6 
+                    .form__counter 
+                      .form__label Количество часов
+                      .form__flex 
+                        .counter.js-counter
+                          .counter__btn.js-counter-minus 
+                            svg(class="icon-minus")
+                              use(xlink:href="img/sprite.svg#minus")
+                          .counter__input.js-counter-input
+                            input(type="text" value="3" maxlength="3")
+                          .counter__btn.js-counter-plus 
+                            svg(class="icon-plus")
+                              use(xlink:href="img/sprite.svg#plus")
+                        .form__radio  
+                          input#day(type="radio", name="time" checked)
+                          label(for="day") 
+                            svg(class="icon-sun")
+                              use(xlink:href="img/sprite.svg#sun")
+                            span день
+                        .form__radio  
+                          input#night(type="radio", name="time")
+                          label(for="night") 
+                            svg(class="icon-stars")
+                              use(xlink:href="img/sprite.svg#stars")
+                            span ночь
+                  .form__col-inner-12
+                    .form__textarea 
+                      .form__label Комментарий к заявке
+                      textarea 
+              .form__col 
+                .form__calendar-wrap 
+                  .form__label Желаемая дата посещения
+                  .form__calendar 
+                    input#calendar 
+        // /form
+
+        // select-bathhouse
+        .select-bathhouse
+          .wrapper 
+            .row 
+              .select-bathhouse__col 
+                .subtitle 
+                  h2.subtitle__text Выбрать баню
+                  svg(class="icon-3b-divider-line")
+                    use(xlink:href="img/sprite.svg#3b-divider-line")
+                .select-bathhouse__items 
+                  .row 
+                    .select-bathhouse__col-item
+                      .select-bathhouse__item 
+                        input#type0(type="radio", name="type" checked)
+                        label(for="type0") 
+                          .select-bathhouse__name Змей Горыныч
+                          .select-bathhouse__price 16 000 р.
+                    .select-bathhouse__col-item
+                      .select-bathhouse__item 
+                        input#type1(type="radio", name="type")
+                        label(for="type1") 
+                          .select-bathhouse__name Алёша Попович
+                          .select-bathhouse__price от 1 800 р./час
+                    .select-bathhouse__col-item
+                      .select-bathhouse__item 
+                        input#type2(type="radio", name="type")
+                        label(for="type2") 
+                          .select-bathhouse__name Добрыня Никитич
+                          .select-bathhouse__price от 3 000 р./час
+                    .select-bathhouse__col-item
+                      .select-bathhouse__item 
+                        input#type3(type="radio", name="type")
+                        label(for="type3") 
+                          .select-bathhouse__name Изба здоровья
+                          .select-bathhouse__price от 2 400 р./час
+                    .select-bathhouse__col-item
+                      .select-bathhouse__item 
+                        input#type4(type="radio", name="type")
+                        label(for="type4") 
+                          .select-bathhouse__name Василиса
+                          .select-bathhouse__price от 1 800 р./час
+                    .select-bathhouse__col-item
+                      .select-bathhouse__item 
+                        input#type5(type="radio", name="type")
+                        label(for="type5") 
+                          .select-bathhouse__name Забава
+                          .select-bathhouse__price от 2 400 р./час
+                    .select-bathhouse__col-item
+                      .select-bathhouse__item 
+                        input#type6(type="radio", name="type")
+                        label(for="type6") 
+                          .select-bathhouse__name Илья Муромец
+                          .select-bathhouse__price от 4 500 р./час
+              .select-bathhouse__col 
+                .select-bathhouse__slider 
+                  #selectBathhouseSlider
+                    .swiper-wrapper 
+                      .swiper-slide 
+                        .select-bathhouse__img 
+                          img(src="img/bathhouse-preview/img1.webp", alt="")
+                      .swiper-slide 
+                        .select-bathhouse__img 
+                          img(src="img/bathhouse-preview/img1.webp", alt="")
+                      .swiper-slide 
+                        .select-bathhouse__img 
+                          img(src="img/bathhouse-preview/img1.webp", alt="")
+                    .select-bathhouse__pagination.swiper-pagination 
+                .select-bathhouse__img-footer 
+                  .select-bathhouse__img-name Баня «Змей Горыныч»
+                  a(href="#").select-bathhouse__img-more 
+                    span Подробнее
+                    svg(class="icon-long-arrow-right")
+                      use(xlink:href="img/sprite.svg#long-arrow-right")
+        // /select-bathhouse
 
     include core/footer.pug
