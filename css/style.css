@@ -303,6 +303,17 @@ body.lock {
 .btn--brown:hover {
   opacity: 1;
 }
+.btn--red {
+  padding: 24px 20px;
+  border-color: #aa181b;
+  color: #aa181b;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.btn--red:hover {
+  border-color: #00A859;
+  color: #00A859;
+}
 @media (max-width: 500px) {
   .btn {
     font-size: 16px;
@@ -2803,6 +2814,40 @@ body.lock {
 }
 
 /* /select-services */
+/* result-form */
+.result-form {
+  margin-bottom: 110px;
+}
+.result-form .subtitle {
+  margin-bottom: 35px;
+}
+.result-form__text {
+  margin-bottom: 30px;
+}
+.result-form__text p {
+  margin: 6px 0;
+}
+.result-form__price {
+  font-weight: bold;
+  margin-bottom: 65px;
+}
+.result-form__btn {
+  margin-bottom: 20px;
+}
+.result-form__btn .btn {
+  width: 100%;
+  max-width: 300px;
+}
+@media (max-width: 500px) {
+  .result-form {
+    margin-bottom: 60px;
+  }
+  .result-form__btn .btn {
+    max-width: none;
+  }
+}
+
+/* /result-form */
 /* footer */
 .footer {
   border-top: 1px solid #dad3cf;

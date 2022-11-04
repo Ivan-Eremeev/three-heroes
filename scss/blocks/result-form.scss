@@ -1,0 +1,36 @@
+/* result-form */
+.result-form { 
+  margin-bottom: 110px;
+  .subtitle {
+    margin-bottom: 35px;
+  }
+  &__text {
+    margin-bottom: 30px;
+    p {
+      margin: 6px 0;
+    }
+  }
+  &__price {
+    font-weight: bold;
+    margin-bottom: 65px;
+  }
+  &__btn {
+    margin-bottom: 20px;
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  &__ps {
+    
+  }
+  @media (max-width: $break_xs) {
+    margin-bottom: 60px;
+    &__btn {
+      .btn {
+        max-width: none;
+      }
+    }
+  }
+}
+/* /result-form */

@@ -346,19 +346,6 @@ block content
               img(src="img/gallery/img7.webp", alt="")
       // /gallery
 
-      // contact
-      .contact
-        .contact__head 
-          .wrapper 
-            .contact__row 
-              .contact__title Ждем вас в гости!
-              .contact__address 
-                svg(class="icon-map-pin")
-                  use(xlink:href="img/sprite.svg#map-pin")
-                span г. Екатеринбург,  ул. Норильская, 78 <br>(район озера Шарташ)
-              .contact__link построить маршрут
-        .contact__map 
-          #contactMap(data-point="[56.88583506780154,60.6815834999999]")
-      // /contact
+      include blocks/contact.pug
 
     include core/footer.pug

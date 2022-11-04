@@ -33,6 +33,17 @@
       opacity: 1;
     }
   }
+  &--red {
+    padding: 24px 20px;
+    border-color: $red;
+    color: $red;
+    font-weight: 900;
+    text-transform: uppercase;
+    &:hover {
+      border-color: $green;
+      color: $green;
+    }
+  }
   @media (max-width: $break_xs) {
     font-size: 16px;
   }

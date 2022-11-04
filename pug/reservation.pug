@@ -224,4 +224,23 @@ block content
                   use(xlink:href="img/sprite.svg#arrow-right")
         // /select-services
 
+        // result-form
+        .result-form
+          .wrapper 
+            .subtitle 
+              h2.subtitle__text Вы выбрали
+              svg(class="icon-3b-divider-line")
+                use(xlink:href="img/sprite.svg#3b-divider-line")
+            .result-form__text 
+              p Баня «Змей Горыныч» для 1 гостя. 
+              p Дата посещения: 7 октября 2022, желаемое количество часов: 4, утреннее время.
+              p Выбранные услуги и парения: Аромо-парение (15 мин.)
+            .result-form__price Стоимость бронирования: 17 000 р.
+            .result-form__btn 
+              button(type="submit").btn.btn--red Отправить заявку
+            .result-form__ps * Данная заявка не является бронированием и требует подтверждения менеджером.
+        // /result-form
+
+      include blocks/contact.pug
+
     include core/footer.pug
