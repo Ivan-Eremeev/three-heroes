@@ -2716,6 +2716,15 @@ body.lock {
   .select-bathhouse__img {
     height: 300px;
   }
+  .select-bathhouse__img-name {
+    font-size: 16px;
+  }
+  .select-bathhouse__img-more {
+    font-size: 14px;
+  }
+  .select-bathhouse__img-more svg {
+    width: 30px;
+  }
 }
 
 /* /select-bathhouse */

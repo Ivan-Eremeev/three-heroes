@@ -143,6 +143,15 @@
     &__img {
       height: 300px;
     }
+    &__img-name {
+      font-size: 16px;
+    }
+    &__img-more {
+      font-size: 14px;
+      svg {
+        width: 30px;
+      }
+    }
   }
 }
 /* /select-bathhouse */
