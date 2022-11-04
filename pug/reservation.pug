@@ -32,4 +32,66 @@ block content
               use(xlink:href="img/sprite.svg#3b-divider")
       // /head
 
+      // form
+      form(action="#").form
+        .wrapper 
+          .row 
+            .form__col 
+              .row 
+                .form__col-inner-6
+                  .form__input  
+                    .form__label Ваше Имя
+                    input(type="text" name="name")
+                .form__col-inner-6
+                  .form__input  
+                    .form__label Ваш Телефон
+                    input(type="text" name="tel" inputmode="tel" placeholder="+7")
+                .form__col-inner-6 
+                  .form__counter 
+                    .form__label Количество гостей
+                    .counter.js-counter
+                      .counter__btn.js-counter-minus 
+                        svg(class="icon-minus")
+                          use(xlink:href="img/sprite.svg#minus")
+                      .counter__input.js-counter-input
+                        input(type="text" value="1" maxlength="3")
+                      .counter__btn.js-counter-plus 
+                        svg(class="icon-plus")
+                          use(xlink:href="img/sprite.svg#plus")
+                .form__col-inner-6 
+                  .form__counter 
+                    .form__label Количество часов
+                    .form__flex 
+                      .counter.js-counter
+                        .counter__btn.js-counter-minus 
+                          svg(class="icon-minus")
+                            use(xlink:href="img/sprite.svg#minus")
+                        .counter__input.js-counter-input
+                          input(type="text" value="3" maxlength="3")
+                        .counter__btn.js-counter-plus 
+                          svg(class="icon-plus")
+                            use(xlink:href="img/sprite.svg#plus")
+                      .form__radio  
+                        input#day(type="radio", name="time" checked)
+                        label(for="day") 
+                          svg(class="icon-sun")
+                            use(xlink:href="img/sprite.svg#sun")
+                          span день
+                      .form__radio  
+                        input#night(type="radio", name="time")
+                        label(for="night") 
+                          svg(class="icon-stars")
+                            use(xlink:href="img/sprite.svg#stars")
+                          span ночь
+                .form__col-inner-12
+                  .form__textarea 
+                    .form__label Комментарий к заявке
+                    textarea 
+            .form__col 
+              .form__calendar-wrap 
+                .form__label Желаемая дата посещения
+                .form__calendar 
+                  input#calendar 
+      // /form
+
     include core/footer.pug
