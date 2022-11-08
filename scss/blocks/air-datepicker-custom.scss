@@ -28,9 +28,6 @@
   background-color: transparent;
   color: $brown;
 }
-.air-datepicker-cell.-day-.-current- {
-  color: $red;
-}
 .air-datepicker-cell.-day-.-selected- {
   position: relative;
   background-color: transparent;
@@ -47,6 +44,10 @@
     left: 50%;
     transform: translate(-50%,-47%);
   }
+}
+.air-datepicker-cell.-day-.-current- {
+  color: $red;
+  font-weight: 500;
 }
 .air-datepicker-nav--action {
   width: 45px;

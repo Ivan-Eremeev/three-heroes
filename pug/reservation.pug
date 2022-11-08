@@ -17,6 +17,24 @@ block content
           img(src="img/reservation-head.webp", alt="")
         .page-head__smoke 
           img(src="img/smoke.png", alt="")
+        .page-head__mobile 
+          .wrapper 
+            ul.page-head__items 
+              li.page-head__tel 
+                a(href="tel:+73433430594") 
+                  svg(class="icon-phone")
+                    use(xlink:href="img/sprite.svg#phone")
+                  | +7 (343) 343-05-94
+              li.page-head__whatsapp 
+                a(href="#") 
+                  svg(class="icon-whatsapp")
+                    use(xlink:href="img/sprite.svg#whatsapp")
+                  | Whatsapp
+              li.page-head__callback 
+                a(href="#") 
+                  svg(class="icon-ordercall")
+                    use(xlink:href="img/sprite.svg#ordercall")
+                  | Заказать звонок
         .wrapper 
           h1.page-head__title ОНЛАЙН БРОНИРОВАНИЕ
       // /page-head
