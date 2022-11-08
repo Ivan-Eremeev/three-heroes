@@ -1249,7 +1249,7 @@ body.lock {
     width: 100%;
     -webkit-animation: showStyky 0.5s;
     animation: showStyky 0.5s;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.7);
   }
   #headerSticky.sticky .header__top {
     margin-top: -50px;
