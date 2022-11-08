@@ -18,6 +18,28 @@ block content
         .welcome__smoke 
           img(src="img/smoke.png", alt="")
         .wrapper 
+          .welcome__mobile 
+            .welcome__address 
+              svg(class="icon-map-pin")
+                use(xlink:href="img/sprite.svg#map-pin")
+              | Екатеринбург, ул. Норильская, 78 
+              a(href="#") Как нас найти?
+            ul.welcome__items 
+              li.welcome__tel 
+                a(href="tel:+73433430594") 
+                  svg(class="icon-phone")
+                    use(xlink:href="img/sprite.svg#phone")
+                  | +7 (343) 343-05-94
+              li.welcome__whatsapp 
+                a(href="#") 
+                  svg(class="icon-whatsapp")
+                    use(xlink:href="img/sprite.svg#whatsapp")
+                  | Whatsapp
+              li.welcome__callback 
+                a(href="#") 
+                  svg(class="icon-ordercall")
+                    use(xlink:href="img/sprite.svg#ordercall")
+                  | Заказать звонок
           .welcome__buttons 
             .btn.btn--white Узнать цену
             .btn.btn--white Забронировать отдых

@@ -4,7 +4,8 @@ window.onload = function () {
   function submenu() {
     let item = $('.header__has-children');
     let submenu = $('.header__submenu');
-    item.on('click', function () {
+    item.on('click', function (e) {
+      e.preventDefault();
       let itemCurrent = $(this);
       let submenuCurrent = itemCurrent.find('.header__submenu');
       if ($(window).width() < 1050) {
@@ -376,7 +377,8 @@ window.onload = function () {
         close = $('.js-drop-close'),
         body = $('body'),
         header= $('header');
-    btn.on('click', function () {
+    btn.on('click', function (e) {
+      e.preventDefault();
       let $this = $(this);
       let drop = $('#' + $this.data('drop'));
       let scrollWidth = (window.innerWidth - $(window).width());
@@ -439,8 +441,6 @@ window.onload = function () {
         iconLayout: 'default#image',
         iconImageHref: 'img/mark-map.png',
         iconImageSize: [30, 40],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
         iconImageOffset: [-15, -40]
       }),
       myMap.geoObjects
