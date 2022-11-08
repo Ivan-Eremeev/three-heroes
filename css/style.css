@@ -2894,6 +2894,9 @@ body.lock {
   .select-bathhouse__img-more svg {
     width: 30px;
   }
+  .select-bathhouse__slider {
+    margin-top: 0;
+  }
 }
 
 /* /select-bathhouse */

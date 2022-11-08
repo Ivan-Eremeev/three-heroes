@@ -7,7 +7,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
-		<title>Навигаця по страницам</title>
+		<title>Внутреняя страница</title>
 		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
 		<link rel="stylesheet" href="css/plugins/fancybox.css">
@@ -16,7 +16,7 @@
 	<body> 
 		<div class="page"> 
 			<!-- header-->
-			<header class="header header--dark" id="headerSticky">
+			<header class="header" id="headerSticky">
 				<div class="header__top"> 
 					<div class="wrapper"> 
 						<div class="header__address"> 
@@ -102,16 +102,33 @@
 			</header>
 			<!--	/header-->
 			<main class="content"> 
-				<div class="navpage"> 
-					<div class="wrapper">
-						<h1>Навигаця по страницам</h1>
-						<ul> 
-							<li> <a href="home.html">Главная</a></li>
-							<li> <a href="reservation.html">Бронирование</a></li>
-							<li> <a href="page.html">Внутреняя страница</a></li>
-						</ul>
+				<!-- page-head-->
+				<div class="page-head">
+					<div class="page-head__img"> <img src="img/reservation-head.webp" alt=""></div>
+					<div class="page-head__smoke"> <img src="img/smoke.png" alt=""></div>
+					<div class="page-head__mobile"> 
+						<div class="wrapper"> 
+							<ul class="page-head__items"> 
+								<li class="page-head__tel"> <a href="tel:+73433430594"> 
+										<svg class="icon-phone">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg>+7 (343) 343-05-94</a></li>
+								<li class="page-head__whatsapp"> <a href="#"> 
+										<svg class="icon-whatsapp">
+											<use xlink:href="img/sprite.svg#whatsapp"></use>
+										</svg>Whatsapp</a></li>
+								<li class="page-head__callback"> <a href="#"> 
+										<svg class="icon-ordercall">
+											<use xlink:href="img/sprite.svg#ordercall"></use>
+										</svg>Заказать звонок</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="wrapper"> 
+						<h1 class="page-head__title">Баня «Илья Муромец»</h1>
 					</div>
 				</div>
+				<!-- /page-head-->
 			</main>
 			<!-- footer-->
 			<footer class="footer"> 

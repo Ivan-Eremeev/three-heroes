@@ -1,0 +1,89 @@
+// header
+header#headerSticky.header.header--dark
+  .header__top 
+    .wrapper 
+      .header__address 
+        svg(class="icon-map-pin")
+          use(xlink:href="img/sprite.svg#map-pin")
+        | Екатеринбург, ул. Норильская, 78 
+        a(href="#") Как нас найти?
+      ul.header__items 
+        li.header__price 
+          a(href="#") 
+            svg(class="icon-findprice")
+              use(xlink:href="img/sprite.svg#findprice")
+            | Узнать цену
+        li.header__tel 
+          a(href="tel:+73433430594") 
+            svg(class="icon-phone")
+              use(xlink:href="img/sprite.svg#phone")
+            | +7 (343) 343-05-94
+        li.header__whatsapp 
+          a(href="#") 
+            svg(class="icon-whatsapp")
+              use(xlink:href="img/sprite.svg#whatsapp")
+            | Whatsapp
+        li.header__callback 
+          a(href="#") 
+            svg(class="icon-ordercall")
+              use(xlink:href="img/sprite.svg#ordercall")
+            | Заказать звонок
+      .header__social.header__social--desktop
+        a.header__social-icon(href="#") 
+          svg(class="icon-telegram")
+            use(xlink:href="img/sprite.svg#telegram")
+        a.header__social-icon(href="#") 
+          svg(class="icon-vk")
+            use(xlink:href="img/sprite.svg#vk")
+        a.header__social-icon(href="#") 
+          svg(class="icon-youtube")
+            use(xlink:href="img/sprite.svg#youtube")
+    .header__buttons
+      .btn.btn--white Узнать цену
+      .btn.btn--white Забронировать отдых
+  .header__bottom 
+    .wrapper 
+      .header__logo 
+        a(href="#").header__logo-link 
+          img(src="img/3blogo-light.svg", alt="")
+        .header__logo-text Правильные русские бани
+      nav.header__nav#menu 
+        ul.header__list 
+          li 
+            a(href="#") Парения
+          li.header__has-children 
+            a(href="#") Бани
+            ul.header__submenu 
+              li 
+                a(href="#") Илья Муромец
+              li 
+                a(href="#") Алеша Попович
+              li 
+                a(href="#") Баня по-чёрному
+          li 
+            a(href="#") Акции
+          li 
+            a(href="#") Услуги
+          li 
+            a(href="#") Кухня
+          li 
+            a(href="#") Cертификаты
+          li 
+            a(href="#") События
+          li 
+            a(href="#") Контакты
+        .header__social.header__social--mobile 
+          a.header__social-icon(href="#") 
+            svg(class="icon-telegram")
+              use(xlink:href="img/sprite.svg#telegram")
+          a.header__social-icon(href="#") 
+            svg(class="icon-vk")
+              use(xlink:href="img/sprite.svg#vk")
+          a.header__social-icon(href="#") 
+            svg(class="icon-youtube")
+              use(xlink:href="img/sprite.svg#youtube")
+        .header__close-menu.js-drop-close(data-drop="menu")
+      .header__hamburger.hamburger.hamburger--squeeze.js-drop-menu(data-drop="menu")
+        .hamburger-box
+          .hamburger-inner
+//	/header
