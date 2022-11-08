@@ -39,4 +39,86 @@ block content
           h1.page-head__title Баня «Илья Муромец»
       // /page-head
 
+      // bathhouse-gallery
+      .bathhouse-gallery
+        .wrapper 
+          .bathhouse-gallery__gallery 
+              .bathhouse-gallery__col.bathhouse-gallery__col1
+                a(href="img/bathhouse-gallery/img1.webp" data-fancybox="gallery").bathhouse-gallery__img 
+                  img(src="img/bathhouse-gallery/img1.webp", alt="")
+              .bathhouse-gallery__col.bathhouse-gallery__col2
+                a(href="img/bathhouse-gallery/img2.webp" data-fancybox="gallery").bathhouse-gallery__img 
+                  img(src="img/bathhouse-gallery/img2.webp", alt="")
+              .bathhouse-gallery__col.bathhouse-gallery__col3
+                a(href="img/bathhouse-gallery/img3.webp" data-fancybox="gallery").bathhouse-gallery__img 
+                  img(src="img/bathhouse-gallery/img3.webp", alt="")
+              .bathhouse-gallery__col.bathhouse-gallery__col4
+                a(href="img/bathhouse-gallery/img4.webp" data-fancybox="gallery").bathhouse-gallery__img 
+                  img(src="img/bathhouse-gallery/img4.webp", alt="")
+              .bathhouse-gallery__col.bathhouse-gallery__col5
+                a(href="img/bathhouse-gallery/img5.webp" data-fancybox="gallery").bathhouse-gallery__img 
+                  img(src="img/bathhouse-gallery/img5.webp", alt="")
+                  .bathhouse-gallery__more все фото
+          .bathhouse-gallery__hidden 
+            a(href="img/bathhouse-preview/img2.webp" data-fancybox="gallery") 
+              img(src="img/bathhouse-preview/img2.webp", alt="")
+            a(href="img/bathhouse-preview/img3.webp" data-fancybox="gallery") 
+              img(src="img/bathhouse-preview/img3.webp", alt="")
+            a(href="img/services/img2.webp" data-fancybox="gallery") 
+              img(src="img/services/img2.webp", alt="")
+            a(href="img/services/img3.webp" data-fancybox="gallery") 
+              img(src="img/services/img3.webp", alt="")
+            a(href="img/services/img1.jpg" data-fancybox="gallery") 
+              img(src="img/services/img1.jpg", alt="")
+            a(href="img/services/img5.webp" data-fancybox="gallery") 
+              img(src="img/services/img5.webp", alt="")
+
+          .bathhouse-gallery__bottom 
+            ul.bathhouse-gallery__list 
+              li 
+                svg(class="icon-people")
+                  use(xlink:href="img/sprite.svg#people")
+                span до 30 человек
+              li 
+                svg(class="icon-bonussystem")
+                  use(xlink:href="img/sprite.svg#bonussystem")
+                span Бонусная система
+              li 
+                a(href="#") 
+                  svg(class="icon-giftcert")
+                    use(xlink:href="img/sprite.svg#giftcert")
+                  span Подарочные сертификаты
+              li 
+                svg(class="icon-addperson")
+                  use(xlink:href="img/sprite.svg#addperson")
+                span Доплата за доп. гостя: 300 р.
+              li 
+                svg(class="icon-kid")
+                  use(xlink:href="img/sprite.svg#kid")
+                span Дети до 10 лет - бесплатно
+              li 
+                svg(class="icon-tea")
+                  use(xlink:href="img/sprite.svg#tea")
+                span Чай-комплимент в подарок
+            .bathhouse-gallery__reservation 
+              .bathhouse-gallery__time 
+                .bathhouse-gallery__radio 
+                  input#day(type="radio", name="time" checked)
+                  label(for="day") 
+                    svg(class="icon-sun")
+                      use(xlink:href="img/sprite.svg#sun")
+                    span день
+                .bathhouse-gallery__radio 
+                  input#night(type="radio", name="time")
+                  label(for="night") 
+                    svg(class="icon-stars")
+                      use(xlink:href="img/sprite.svg#stars")
+                    span ночь
+              .bathhouse-gallery__price от 
+                span 4 500 
+                | ₽/Ч
+              .bathhouse-gallery__btn 
+                .btn.btn--red Забронировать
+      // /bathhouse-gallery
+
     include core/footer.pug
