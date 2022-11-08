@@ -3010,7 +3010,7 @@ body.lock {
   margin-top: -135px;
   position: relative;
   z-index: 2;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .bathhouse-gallery__gallery {
   display: grid;
@@ -3185,8 +3185,14 @@ body.lock {
   color: #aa181b;
   margin-bottom: 20px;
 }
-.bathhouse-gallery__price span {
+.bathhouse-gallery__price-bold {
+  display: inline;
   font-weight: 900;
+}
+.bathhouse-gallery__price-small {
+  display: inline;
+  font-size: 22px;
+  font-weight: 700;
 }
 .bathhouse-gallery__btn .btn {
   min-width: 300px;
@@ -3198,6 +3204,81 @@ body.lock {
 }
 
 /* /bathhouse-gallery */
+/* bathhouse-description */
+.bathhouse-description {
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+.bathhouse-description .row {
+  margin-left: -50px;
+  margin-top: -30px;
+}
+.bathhouse-description .row > * {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.bathhouse-description__title {
+  font-size: 35px;
+  color: #331408;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 17px;
+}
+.bathhouse-description__title:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #E0D8D3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 7px;
+  z-index: -1;
+}
+.bathhouse-description__title span {
+  padding-right: 5px;
+  background-color: #f7f3f0;
+}
+.bathhouse-description__col {
+  width: 50%;
+}
+.bathhouse-description__text {
+  font-size: 16px;
+  line-height: 20px;
+}
+.bathhouse-description__ps {
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.bathhouse-description__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.bathhouse-description__list {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.bathhouse-description__list li {
+  padding-left: 40px;
+  position: relative;
+}
+.bathhouse-description__list li:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 5px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg viewBox='0 0 20 5' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%233c1e0e'%3E%3Cpath d='M19.5417788,0 C14.4528301,0.0615384615 9.37998568,0.369230769 4.29103696,0.923076923 C2.87386137,1.10769231 1.45668577,1.23076923 0.0395101815,1.47692308 C-0.0732196952,1.47692308 0.0878229858,2.46153846 0.120031522,2.58461538 C0.168344326,2.89230769 0.345491275,4 0.458221152,4 C5.5310656,3.32307692 10.6200143,2.83076923 15.708963,2.64615385 C17.1261386,2.58461538 18.5433142,2.58461538 19.9604898,2.52307692 C20.0732197,2.52307692 19.912177,1.53846154 19.8799685,1.41538462 C19.8155514,1.04615385 19.6545087,0 19.5417788,0 L19.5417788,0 Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+/* /bathhouse-description */
 /* footer */
 .footer {
   border-top: 1px solid #dad3cf;
