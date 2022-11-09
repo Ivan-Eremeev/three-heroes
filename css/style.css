@@ -2802,12 +2802,14 @@ body.lock {
   color: #aa181b;
 }
 .select-bathhouse__name {
+  display: block;
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
 .select-bathhouse__price {
+  display: block;
   font-size: 16px;
   font-weight: 300;
 }
