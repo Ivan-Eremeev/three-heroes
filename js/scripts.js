@@ -499,7 +499,7 @@ window.onload = function () {
 
   // Яндекс карты
   if ($('#contactMap').length) {
-    // lazyMap();
+    lazyMap();
   }
   // Инициализация и настройки карты
   function initAndSettingsMap() {
@@ -529,9 +529,6 @@ window.onload = function () {
       myMap.behaviors.disable('scrollZoom');
     });
   };
-  setTimeout(() => {
-    initAndSettingsMap();
-  }, 3000);
   // Ленивая загрузка карты
   function lazyMap() {
     var lazyMaps = [].slice.call(document.querySelectorAll("#contactMap"));
@@ -551,6 +548,6 @@ window.onload = function () {
         lazyMapObserver.observe(lazyMap);
       });
     }
-  }
+  };
 
 }
