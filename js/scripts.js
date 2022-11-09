@@ -503,6 +503,8 @@ window.onload = function () {
   }
   // Инициализация и настройки карты
   function initAndSettingsMap() {
+    console.log('initMap');
+
     var point = $('#contactMap').data('point');
     ymaps.ready(function () {
       var myMap;
