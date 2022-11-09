@@ -74,6 +74,7 @@
       align-items: center;
       margin-bottom: 30px;
       @include col(4);
+      @include col-xs(6);
       a {
         display: flex;
         align-items: center;
@@ -156,6 +157,50 @@
   }
   @media (max-width: $break_md) {
     margin-top: -80px;
+    &__gallery {
+      height: 450px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__gallery {
+      height: 700px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 1fr 1fr;
+      grid-template-areas:
+        "bathhouse-gallery__col1 bathhouse-gallery__col1"
+        "bathhouse-gallery__col2 bathhouse-gallery__col3"
+        "bathhouse-gallery__col4 bathhouse-gallery__col5";
+    }
+    &__bottom {
+      flex-wrap: wrap;
+    }
+    &__list {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__reservation {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    &__time-price {
+      margin-right: 20px;
+    }
+    &__btn {
+      margin-left: auto;
+      .btn {
+        min-width: 250px;
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    margin-bottom: 30px;
+    &__reservation {
+      display: block;
+    }
+    &__btn {
+      text-align: center;
+    }
   }
 }
 /* /bathhouse-gallery */

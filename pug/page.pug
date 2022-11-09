@@ -101,22 +101,23 @@ block content
                   use(xlink:href="img/sprite.svg#tea")
                 span Чай-комплимент в подарок
             .bathhouse-gallery__reservation 
-              .bathhouse-gallery__time 
-                .bathhouse-gallery__radio 
-                  input#day(type="radio", name="time" checked)
-                  label(for="day") 
-                    svg(class="icon-sun")
-                      use(xlink:href="img/sprite.svg#sun")
-                    span день
-                .bathhouse-gallery__radio 
-                  input#night(type="radio", name="time")
-                  label(for="night") 
-                    svg(class="icon-stars")
-                      use(xlink:href="img/sprite.svg#stars")
-                    span ночь
-              .bathhouse-gallery__price от 
-                .bathhouse-gallery__price-bold 4 500 
-                .bathhouse-gallery__price-small &#8381;/Ч
+              .bathhouse-gallery__time-price 
+                .bathhouse-gallery__time 
+                  .bathhouse-gallery__radio 
+                    input#day(type="radio", name="time" checked)
+                    label(for="day") 
+                      svg(class="icon-sun")
+                        use(xlink:href="img/sprite.svg#sun")
+                      span день
+                  .bathhouse-gallery__radio 
+                    input#night(type="radio", name="time")
+                    label(for="night") 
+                      svg(class="icon-stars")
+                        use(xlink:href="img/sprite.svg#stars")
+                      span ночь
+                .bathhouse-gallery__price от 
+                  .bathhouse-gallery__price-bold 4 500 
+                  .bathhouse-gallery__price-small &#8381;/Ч
               .bathhouse-gallery__btn 
                 .btn.btn--red Забронировать
       // /bathhouse-gallery

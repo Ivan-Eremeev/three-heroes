@@ -11,6 +11,9 @@
   }
   &__col {
     @include col(3);
+    @include col-md(4);
+    @include col-sm(6);
+    @include col-xs(12);
   }
   &__item {
     display: flex;
@@ -42,6 +45,9 @@
   }
   &__text {
     color: rgba(50, 41, 47, 0.7);
+  }
+  @media (max-width: $break_xs) {
+    margin-bottom: 50px;
   }
 }
 /* /item-links */

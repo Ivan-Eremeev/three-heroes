@@ -3102,6 +3102,11 @@ body.lock {
   margin-bottom: 30px;
   width: 33.3333333333%;
 }
+@media screen and (max-width: 500px) {
+  .bathhouse-gallery__list li {
+    width: 50%;
+  }
+}
 .bathhouse-gallery__list li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3201,6 +3206,54 @@ body.lock {
   .bathhouse-gallery {
     margin-top: -80px;
   }
+  .bathhouse-gallery__gallery {
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .bathhouse-gallery__gallery {
+    height: 700px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "bathhouse-gallery__col1 bathhouse-gallery__col1" "bathhouse-gallery__col2 bathhouse-gallery__col3" "bathhouse-gallery__col4 bathhouse-gallery__col5";
+  }
+  .bathhouse-gallery__bottom {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .bathhouse-gallery__list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bathhouse-gallery__reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .bathhouse-gallery__time-price {
+    margin-right: 20px;
+  }
+  .bathhouse-gallery__btn {
+    margin-left: auto;
+  }
+  .bathhouse-gallery__btn .btn {
+    min-width: 250px;
+  }
+}
+@media (max-width: 500px) {
+  .bathhouse-gallery {
+    margin-bottom: 30px;
+  }
+  .bathhouse-gallery__reservation {
+    display: block;
+  }
+  .bathhouse-gallery__btn {
+    text-align: center;
+  }
 }
 
 /* /bathhouse-gallery */
@@ -3241,6 +3294,11 @@ body.lock {
 }
 .bathhouse-description__col {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .bathhouse-description__col {
+    width: 100%;
+  }
 }
 .bathhouse-description__text {
   font-size: 16px;
@@ -3292,11 +3350,10 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .bathhouse-description__list {
   width: 50%;
-  margin-bottom: 20px;
 }
 .bathhouse-description__list li {
   padding-left: 40px;
@@ -3314,6 +3371,33 @@ body.lock {
   top: 7px;
   left: 0;
 }
+@media (max-width: 1050px) {
+  .bathhouse-description__lists {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .bathhouse-description__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  .bathhouse-description {
+    margin-bottom: 30px;
+  }
+  .bathhouse-description__lists {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .bathhouse-description__title {
+    font-size: 30px;
+  }
+  .bathhouse-description__text {
+    margin-bottom: 30px;
+  }
+}
 
 /* /bathhouse-description */
 /* item-links */
@@ -3330,6 +3414,21 @@ body.lock {
 }
 .item-links__col {
   width: 25%;
+}
+@media screen and (max-width: 1050px) {
+  .item-links__col {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item-links__col {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item-links__col {
+    width: 100%;
+  }
 }
 .item-links__item {
   display: -webkit-box;
@@ -3376,6 +3475,11 @@ body.lock {
 }
 .item-links__text {
   color: rgba(50, 41, 47, 0.7);
+}
+@media (max-width: 500px) {
+  .item-links {
+    margin-bottom: 50px;
+  }
 }
 
 /* /item-links */
