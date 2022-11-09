@@ -421,35 +421,6 @@ window.onload = function () {
   dropBlock($('.js-drop-btn'));
   dropBlock($('.js-drop-menu'), true);
 
-  // YandexMap
-  if ($('#contactMap').length) {
-    var point = $('#contactMap').data('point');
-    ymaps.ready(function () {
-      var myMap;
-      myMap = new ymaps.Map("contactMap", {
-        center: point, // Центер карты
-        zoom: 15, // Коэффициент масштаба карты
-        controls: [ // Элементы управления
-          'zoomControl',
-          'geolocationControl'
-        ]
-      });
-      // Добавление метки
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Бани "Три богатыря"',
-      }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/mark-map.png',
-        iconImageSize: [30, 40],
-        iconImageOffset: [-15, -40]
-      }),
-      myMap.geoObjects
-        .add(myPlacemark);
-      // Отключить изменение масштаба колесом мыши
-      myMap.behaviors.disable('scrollZoom');
-    });
-  }
-
   // Inputmask | Маска ввода телефона в поле
   if ($('input[name="tel"]').length) {
     $('input[name="tel"]').inputmask({
@@ -495,5 +466,34 @@ window.onload = function () {
     }
   };
   uploadYoutubeVideo();
+
+  // YandexMap
+  if ($('#contactMap').length) {
+    var point = $('#contactMap').data('point');
+    ymaps.ready(function () {
+      var myMap;
+      myMap = new ymaps.Map("contactMap", {
+        center: point, // Центер карты
+        zoom: 15, // Коэффициент масштаба карты
+        controls: [ // Элементы управления
+          'zoomControl',
+          'geolocationControl'
+        ]
+      });
+      // Добавление метки
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Бани "Три богатыря"',
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/mark-map.png',
+        iconImageSize: [30, 40],
+        iconImageOffset: [-15, -40]
+      }),
+        myMap.geoObjects
+          .add(myPlacemark);
+      // Отключить изменение масштаба колесом мыши
+      myMap.behaviors.disable('scrollZoom');
+    });
+  }
 
 }
