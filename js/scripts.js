@@ -468,7 +468,41 @@ window.onload = function () {
   uploadYoutubeVideo();
 
   // YandexMap
+  // if ($('#contactMap').length) {
+  //   var point = $('#contactMap').data('point');
+  //   ymaps.ready(function () {
+  //     var myMap;
+  //     myMap = new ymaps.Map("contactMap", {
+  //       center: point, // Центер карты
+  //       zoom: 15, // Коэффициент масштаба карты
+  //       controls: [ // Элементы управления
+  //         'zoomControl',
+  //         'geolocationControl'
+  //       ]
+  //     });
+  //     // Добавление метки
+  //     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+  //       hintContent: 'Бани "Три богатыря"',
+  //     }, {
+  //       iconLayout: 'default#image',
+  //       iconImageHref: 'img/mark-map.png',
+  //       iconImageSize: [30, 40],
+  //       iconImageOffset: [-15, -40]
+  //     }),
+  //       myMap.geoObjects
+  //         .add(myPlacemark);
+  //     // Отключить изменение масштаба колесом мыши
+  //     myMap.behaviors.disable('scrollZoom');
+  //   });
+  // }
+  
+
+  // Яндекс карты
   if ($('#contactMap').length) {
+    lazyMap();
+  }
+  // Инициализация и настройки карты
+  function initAndSettingsMap() {
     var point = $('#contactMap').data('point');
     ymaps.ready(function () {
       var myMap;
@@ -485,7 +519,7 @@ window.onload = function () {
         hintContent: 'Бани "Три богатыря"',
       }, {
         iconLayout: 'default#image',
-        iconImageHref: 'img/mark-map.png',
+        iconImageHref: 'img/mark-map.webp',
         iconImageSize: [30, 40],
         iconImageOffset: [-15, -40]
       }),
@@ -494,6 +528,26 @@ window.onload = function () {
       // Отключить изменение масштаба колесом мыши
       myMap.behaviors.disable('scrollZoom');
     });
+  };
+  // Ленивая загрузка карты
+  function lazyMap() {
+    var lazyMaps = [].slice.call(document.querySelectorAll("#contactMap"));
+    if ("IntersectionObserver" in window) {
+      var lazyMapObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (map) {
+          if (map.isIntersecting) {
+            initAndSettingsMap();
+          }
+        });
+      },
+        {
+          // threshold: 1,
+        }
+      );
+      lazyMaps.forEach(function (lazyMap) {
+        lazyMapObserver.observe(lazyMap);
+      });
+    }
   }
 
 }
