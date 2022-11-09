@@ -301,7 +301,7 @@ window.onload = function () {
     if ($('#contactMap').length) {
       setTimeout(() => {
         initAndSettingsMap();
-      }, 2000);
+      }, 3000);
     }
     // Инициализация и настройки карты
     function initAndSettingsMap() {
@@ -331,6 +331,6 @@ window.onload = function () {
         myMap.behaviors.disable('scrollZoom');
       });
     };
-  }, 2000);
+  }, 3000);
 
 }
