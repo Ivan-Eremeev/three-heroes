@@ -129,7 +129,8 @@ block content
               .bathhouse-description__title 
                 span О бане
               .bathhouse-description__text Cамый вместительный банный дом для компаний 15-20-30 человек с банкетным залом. Хотите организовать большое гуляние, корпоративное мероприятие или семейное торжество - смело выбирайте именно эту баню.
-              .bathhouse-description__video#rvrfxEdvbfA
+              .bathhouse-description__video.js-youtube#rvrfxEdvbfA
+                img(src="img/video-preview.webp", alt="").video__prev
               .bathhouse-description__ps летний видеотур в бане «Илья Муромец»
             .bathhouse-description__col 
               .bathhouse-description__title 
@@ -159,5 +160,51 @@ block content
                   li Корпоративы
                   li Массаж
       // /bathhouse-description
+
+      // head
+      .head
+        .wrapper
+          h1.head__title 
+            .head__title-italic Посмотреть другие бани
+          .head__divider 
+            svg(class="icon-3b-divider")
+              use(xlink:href="img/sprite.svg#3b-divider")
+      // /head
+
+      // item-links
+      .item-links
+        .wrapper 
+          .row.gy 
+            .item-links__col 
+              a(href="#").item-links__item 
+                .item-links__name Змей Горыныч
+                .item-links__text до 4 чел.
+            .item-links__col 
+              a(href="#").item-links__item 
+                .item-links__name Алёша Попович
+                .item-links__text до 6 чел.
+            .item-links__col 
+              a(href="#").item-links__item 
+                .item-links__name Василиса
+                .item-links__text до 6 чел.
+            .item-links__col 
+              a(href="#").item-links__item 
+                .item-links__name Забава
+                .item-links__text до 8 чел.
+            .item-links__col 
+              a(href="#").item-links__item 
+                .item-links__name Добрыня Никитич
+                .item-links__text до 10 чел.
+            .item-links__col 
+              a(href="#").item-links__item 
+                .item-links__name Изба здоровья
+                .item-links__text до 6 чел.
+            .item-links__col 
+              a(href="#").item-links__item.active
+                .item-links__name Илья Муромец
+                .item-links__text до 30 чел.
+      // /item-links
+
+      include blocks/contact.pug
 
     include core/footer.pug
