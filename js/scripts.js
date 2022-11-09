@@ -496,6 +496,9 @@ window.onload = function () {
   //   });
   // }
   
+  var script = document.createElement('script');
+  script.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
+  document.getElementsByTagName('body')[0].appendChild(script);
 
   // Яндекс карты
   if ($('#contactMap').length) {
