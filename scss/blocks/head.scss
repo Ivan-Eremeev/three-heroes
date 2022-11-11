@@ -10,13 +10,13 @@
     font-weight: normal;
     color: $text;
     text-align: center;
-    span {
-      color: $brown;
-    }
   }
   &__title-italic {
     display: inline;
     font-style: italic;
+  }
+  &__title-brown {
+    color: $brown;
   }
   &__divider {
     max-width: 450px;

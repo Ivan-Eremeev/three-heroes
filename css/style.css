@@ -335,12 +335,12 @@ body.lock {
   color: #4C4449;
   text-align: center;
 }
-.head__title span {
-  color: #8f7865;
-}
 .head__title-italic {
   display: inline;
   font-style: italic;
+}
+.head__title-brown {
+  color: #8f7865;
 }
 .head__divider {
   max-width: 450px;
@@ -2109,7 +2109,11 @@ body.lock {
   margin-left: 20px;
 }
 .about__sub {
+  font-weight: 300;
+  line-height: 1.25;
   margin-bottom: 30px;
+  text-align: justify;
+  color: rgba(50, 41, 47, 0.85);
 }
 .about__subtitle {
   font-size: 30px;
@@ -2117,6 +2121,7 @@ body.lock {
   margin-bottom: 16px;
 }
 .about__subtitle span {
+  font-style: italic;
   color: #8f7865;
 }
 .about__text {
@@ -2126,7 +2131,11 @@ body.lock {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: justify;
   margin-bottom: 25px;
+  color: rgba(50, 41, 47, 0.85);
 }
 .about__img {
   width: 33.3333333333%;

@@ -25,20 +25,29 @@
     }
   }
   &__sub {
+    font-weight: 300;
+    line-height: 1.25;
     margin-bottom: 30px;
+    text-align: justify;
+    color: rgba(50, 41, 47, 0.85);
   }
   &__subtitle {
     font-size: 30px;
     color: $title;
     margin-bottom: 16px;
     span {
+      font-style: italic;
       color: $brown;
     }
   }
   &__text {
     column-count: 2;
     column-gap: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: justify;
     margin-bottom: 25px;
+    color: rgba(50, 41, 47, 0.85);
   }
   &__img {
     @include col(4);

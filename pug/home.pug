@@ -41,12 +41,12 @@ block content
                     use(xlink:href="img/sprite.svg#ordercall")
                   | Заказать звонок
           .welcome__buttons 
-            .btn.btn--white Узнать цену
-            .btn.btn--white Забронировать отдых
+            .btn.btn--white(data-aos="fade-right" data-aos-duration="1000") Узнать цену
+            .btn.btn--white(data-aos="fade-left" data-aos-duration="1000") Забронировать отдых
       // /welcome
 
       // head
-      .head
+      .head(data-aos="fade-up" data-aos-duration="1000")
         .wrapper
           h1.head__title 
             span.head__title-italic Русские бани 
@@ -57,7 +57,7 @@ block content
       // /head
 
       // bathhouse
-      .bathhouse
+      .bathhouse(data-aos="fade-up" data-aos-duration="1000")
         .wrapper 
           .bathhouse__slider 
             #bathhouseSlider 
@@ -207,7 +207,7 @@ block content
       // /bathhouse
 
       // head
-      .head
+      .head(data-aos="fade-up" data-aos-duration="1000")
         .wrapper
           h2.head__title Акции
           .head__divider 
@@ -220,7 +220,7 @@ block content
       // /head
 
       // sales
-      .sales
+      .sales(data-aos="fade-up" data-aos-duration="1000")
         .wrapper 
           .row.gy
             .sales__slider 
@@ -261,7 +261,7 @@ block content
       // /sales
 
       // head
-      .head
+      .head(data-aos="fade-up" data-aos-duration="1000")
         .wrapper
           h2.head__title Услуги
           .head__divider 
@@ -274,7 +274,7 @@ block content
       // /head
 
       // services
-      .services
+      .services(data-aos="fade-up" data-aos-duration="1000")
         .wrapper 
           .services__container
             .services__grid 
@@ -306,7 +306,7 @@ block content
       // /services
 
       // about
-      .about
+      .about(data-aos="fade-up" data-aos-duration="1000")
         .wrapper 
           .about__container 
             .about__content 
@@ -335,15 +335,15 @@ block content
       // /about
 
       // head
-      .head
+      .head(data-aos="fade-up" data-aos-duration="1000")
         .wrapper
           h2.head__title 
-            span Яркие кадры 
+            span.head__title-italic.head__title-brown Яркие кадры 
             | вашего отдыха
       // /head
 
       // gallery
-      .gallery
+      .gallery(data-aos="fade-up" data-aos-duration="1000")
         .gallery__grid 
           .gallery__col.gallery__col--1 
             a(href="img/gallery/img1.webp" data-fancybox="gallery").gallery__img 

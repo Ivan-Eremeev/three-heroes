@@ -117,15 +117,19 @@ window.onload = function () {
         nextEl: '.select-services__arrow--next',
         prevEl: '.select-services__arrow--prev',
       },
+      allowTouchMove: true,
+      mousewheel: true,
       breakpoints: {
         500: {
           slidesPerView: 2,
         },
         768: {
           slidesPerView: 3,
+          allowTouchMove: false,
         },
         1050: {
           slidesPerView: 4,
+          allowTouchMove: false,
         }
       }
     });
@@ -332,5 +336,10 @@ window.onload = function () {
       });
     };
   }, 3000);
+
+  // Плавное появление блоков при скролле
+  AOS.init({
+    once: true,
+  });
 
 }
