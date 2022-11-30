@@ -55,8 +55,8 @@ window.onload = function () {
     const bathhouseSlider = new Swiper('#bathhouseSlider', {
       slidesPerView: 1,
       spaceBetween: 20,
-      threshold: 10,
-      allowTouchMove: true,
+      // threshold: 10,
+      // allowTouchMove: true,
       simulateTouch: false,
       navigation: {
         nextEl: '.bathhouse__arrow--next',
@@ -65,11 +65,11 @@ window.onload = function () {
       breakpoints: {
         500: {
           slidesPerView: 2,
-          allowTouchMove: false,
+          // allowTouchMove: false,
         },
         1050: {
           slidesPerView: 3,
-          allowTouchMove: false,
+          // allowTouchMove: false,
         }
       }
     });
@@ -118,13 +118,13 @@ window.onload = function () {
     const selectServicesSlider = new Swiper('#selectServicesSlider', {
       slidesPerView: 1,
       spaceBetween: 20,
-      threshold: 10,
+      // threshold: 10,
       simulateTouch: false,
       navigation: {
         nextEl: '.select-services__arrow--next',
         prevEl: '.select-services__arrow--prev',
       },
-      allowTouchMove: true,
+      // allowTouchMove: true,
       mousewheel: true,
       breakpoints: {
         500: {
@@ -132,11 +132,11 @@ window.onload = function () {
         },
         768: {
           slidesPerView: 3,
-          allowTouchMove: false,
+          // allowTouchMove: false,
         },
         1050: {
           slidesPerView: 4,
-          allowTouchMove: false,
+          // allowTouchMove: false,
         }
       }
     });
