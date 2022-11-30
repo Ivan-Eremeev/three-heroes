@@ -57,6 +57,7 @@ window.onload = function () {
       spaceBetween: 20,
       threshold: 10,
       allowTouchMove: true,
+      simulateTouch: false,
       navigation: {
         nextEl: '.bathhouse__arrow--next',
         prevEl: '.bathhouse__arrow--prev',
@@ -118,6 +119,7 @@ window.onload = function () {
       slidesPerView: 1,
       spaceBetween: 20,
       threshold: 10,
+      simulateTouch: false,
       navigation: {
         nextEl: '.select-services__arrow--next',
         prevEl: '.select-services__arrow--prev',
