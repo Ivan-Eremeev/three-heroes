@@ -2028,7 +2028,6 @@ body.lock {
   z-index: 2;
 }
 .services__title span {
-  display: inline-block;
   padding: 3px 10px;
   background-color: #6b0f11;
   font-size: 26px;

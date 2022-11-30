@@ -55,6 +55,8 @@ window.onload = function () {
     const bathhouseSlider = new Swiper('#bathhouseSlider', {
       slidesPerView: 1,
       spaceBetween: 20,
+      threshold: 10,
+      allowTouchMove: true,
       navigation: {
         nextEl: '.bathhouse__arrow--next',
         prevEl: '.bathhouse__arrow--prev',
@@ -62,9 +64,11 @@ window.onload = function () {
       breakpoints: {
         500: {
           slidesPerView: 2,
+          allowTouchMove: false,
         },
         1050: {
           slidesPerView: 3,
+          allowTouchMove: false,
         }
       }
     });
@@ -113,6 +117,7 @@ window.onload = function () {
     const selectServicesSlider = new Swiper('#selectServicesSlider', {
       slidesPerView: 1,
       spaceBetween: 20,
+      threshold: 10,
       navigation: {
         nextEl: '.select-services__arrow--next',
         prevEl: '.select-services__arrow--prev',
