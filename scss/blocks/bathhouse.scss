@@ -92,7 +92,7 @@
     overflow: hidden;
     > .row {
       padding: 10px 0 20px;
-      margin-bottom: -70px;
+      margin-bottom: -150px;
       transition: .5s;
     }
   }
@@ -104,10 +104,10 @@
     }
   }
   &__time-btn {
-    @include col(6);
+    @include col(12);
     .btn {
       width: 100%;
-      font-size: 16px;
+      font-size: 14px;
       padding: 2px 10px;
       svg {
         width: 15px;
@@ -129,7 +129,15 @@
     }
   }
   &__price {
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
     @include col(6);
+    font-size: 18px;
+    font-weight: 500;
+    &.active {
+      display: block;
+    }
   }
   &__buttons {
     font-size: 18px;

@@ -349,4 +349,20 @@ window.onload = function () {
     once: true,
   });
 
+  function togglePriceBathhouse() {
+    let item = $('.bathhouse__item');
+    item.each(function () {
+      let itemCurrent = $(this);
+      let btn = itemCurrent.find('.bathhouse__time-btn input');
+      let price = itemCurrent.find('.bathhouse__price');
+      btn.on('change', function () {
+        let data = $(this).data('price');
+        let priceCurrent = itemCurrent.find($('[data-price="' + data + '"]'));
+        price.removeClass('active');
+        priceCurrent.addClass('active');
+      })
+    })
+  };
+  togglePriceBathhouse();
+
 }

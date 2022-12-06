@@ -78,18 +78,15 @@ block content
                           .bathhouse__time 
                             .row.gy
                               .bathhouse__time-btn
-                                input#day0(type="radio" name="time" checked)
-                                label(for="day0").btn.btn--brown 
-                                  svg(class="icon-sun")
-                                    use(xlink:href="img/sprite.svg#sun")
-                                  | день
+                                input#day0(type="radio" name="time" checked data-price="day")
+                                label(for="day0").btn.btn--brown Будни 6:00-16:00
                               .bathhouse__time-btn
-                                input#night0(type="radio" name="time")
-                                label(for="night0").btn.btn--brown 
-                                  svg(class="icon-stars")
-                                    use(xlink:href="img/sprite.svg#stars")
-                                  | ночь
-                          .bathhouse__price от 16 000 р./3 часа
+                                input#night0(type="radio" name="time" data-price="night")
+                                label(for="night0").btn.btn--brown Будни 16:00-6:00, выходные и праздники
+                          .bathhouse__price.active(data-price="day") 16 000 
+                            span.rub ₽
+                          .bathhouse__price(data-price="night") 26 000 
+                            span.rub ₽
                       .bathhouse__buttons 
                         .row.gy
                           .bathhouse__btn 
@@ -112,18 +109,21 @@ block content
                           .bathhouse__time 
                             .row.gy
                               .bathhouse__time-btn
-                                input#day1(type="radio" name="time" checked)
+                                input#day1(type="radio" name="time" checked data-price="day")
                                 label(for="day1").btn.btn--brown 
                                   svg(class="icon-sun")
                                     use(xlink:href="img/sprite.svg#sun")
                                   | день
                               .bathhouse__time-btn
-                                input#night1(type="radio" name="time")
+                                input#night1(type="radio" name="time" data-price="night")
                                 label(for="night1").btn.btn--brown 
                                   svg(class="icon-stars")
                                     use(xlink:href="img/sprite.svg#stars")
                                   | ночь
-                          .bathhouse__price от 16 000 р./3 часа
+                          .bathhouse__price.active(data-price="day") 12 000 
+                            span.rub ₽
+                          .bathhouse__price(data-price="night") 22 000 
+                            span.rub ₽
                       .bathhouse__buttons 
                         .row.gy
                           .bathhouse__btn 
@@ -146,18 +146,21 @@ block content
                           .bathhouse__time 
                             .row.gy
                               .bathhouse__time-btn
-                                input#day2(type="radio" name="time" checked)
+                                input#day2(type="radio" name="time" checked data-price="day")
                                 label(for="day2").btn.btn--brown 
                                   svg(class="icon-sun")
                                     use(xlink:href="img/sprite.svg#sun")
                                   | день
                               .bathhouse__time-btn
-                                input#night2(type="radio" name="time")
+                                input#night2(type="radio" name="time" data-price="night")
                                 label(for="night2").btn.btn--brown 
                                   svg(class="icon-stars")
                                     use(xlink:href="img/sprite.svg#stars")
                                   | ночь
-                          .bathhouse__price от 16 000 р./3 часа
+                          .bathhouse__price.active(data-price="day") 14 000 
+                            span.rub ₽
+                          .bathhouse__price(data-price="night") 24 000 
+                            span.rub ₽
                       .bathhouse__buttons 
                         .row.gy
                           .bathhouse__btn 
@@ -180,18 +183,21 @@ block content
                           .bathhouse__time 
                             .row.gy
                               .bathhouse__time-btn
-                                input#day3(type="radio" name="time" checked)
+                                input#day3(type="radio" name="time" checked data-price="day")
                                 label(for="day3").btn.btn--brown 
                                   svg(class="icon-sun")
                                     use(xlink:href="img/sprite.svg#sun")
                                   | день
                               .bathhouse__time-btn
-                                input#night3(type="radio" name="time")
+                                input#night3(type="radio" name="time" data-price="night")
                                 label(for="night3").btn.btn--brown 
                                   svg(class="icon-stars")
                                     use(xlink:href="img/sprite.svg#stars")
                                   | ночь
-                          .bathhouse__price от 16 000 р./3 часа
+                          .bathhouse__price.active(data-price="day") 12 000 
+                            span.rub ₽
+                          .bathhouse__price(data-price="night") 22 000 
+                            span.rub ₽
                       .bathhouse__buttons 
                         .row.gy
                           .bathhouse__btn 
