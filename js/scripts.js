@@ -349,6 +349,7 @@ window.onload = function () {
     once: true,
   });
 
+  // Изменение цены в блоке с банями
   function togglePriceBathhouse() {
     let item = $('.bathhouse__item');
     item.each(function () {
